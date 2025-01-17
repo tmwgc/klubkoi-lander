@@ -11,7 +11,15 @@ const Header: React.FC = () => {
     <header className="flex justify-between items-center w-full relative px-5 py-9 pb-7 md:py-12 md:pb-3 md:px-20 header-bg bg-black-bg md:bg-transparent relative mb-5 md:mb-0">
       <div className="flex items-center logo hidden md:flex">
         <Link href="/">
-          <Image src="/logo.png" alt="Logo" width={155} height={55} objectFit={"contain"} />
+          <Image
+            priority
+            loading="eager"
+            src="/logo.png"
+            alt="Logo"
+            width={155}
+            height={55}
+            objectFit={"contain"}
+          />
         </Link>
       </div>
       <div className="flex gap-10 items-center">
@@ -19,7 +27,7 @@ const Header: React.FC = () => {
           <Link href="/">
             <Image
               src="/icons/home.svg"
-              alt="Logo"
+              alt="home"
               width={24}
               height={24}
               objectFit={"contain"}
@@ -37,6 +45,8 @@ const Header: React.FC = () => {
       <div className="flex items-center md:hidden">
         <Link href="/">
           <Image
+            priority
+            loading="eager"
             src="/logo.png"
             alt="Logo"
             width={155}
