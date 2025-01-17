@@ -22,7 +22,7 @@ export const SocialIcons: React.FC = () => {
   return (
     <div className="flex gap-2.5 items-center">
       {socialIcons.map((icon, index) => (
-        <Link href="/">
+        <Link href="/" key={index}>
           <Image
             key={index}
             loading="lazy"
