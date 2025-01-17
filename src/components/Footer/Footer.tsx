@@ -7,25 +7,8 @@ import Marquee from "./Marquee";
 export const Footer: React.FC = () => {
   return (
     <footer className="flex flex-col rounded-none footer-bg">
-      {/* <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/d0dfd29fa2b144da9ac1df062167f150/a92cb9e790d62feb3574d82591d57b1509fdd2765270d246e2798801a99c3be1?apiKey=d0dfd29fa2b144da9ac1df062167f150&"
-        alt="Footer banner"
-        className="object-contain w-full aspect-[16.13] max-md:max-w-full"
-      /> */}
       <div className="marquee py-3">
         <Marquee />
-        {/* <div className="marquee-content">
-          {marqueeItems.map((item, index) => (
-            <div key={index} className="marquee-item">
-              <div className="flex items-center gap-2">
-                <Image src={item.icon} alt={item.text} width={24} height={24} />
-                <span className="font-bold text-xl">{item.text}</span>
-              </div>
-            </div>
-          ))}
-          
-        </div> */}
       </div>
       <div className="max-w-[1400px] w-full px-10 m-auto max-md:max-w-full">
         <div className="flex flex-wrap gap-5 justify-between self-center mt-6 w-full pb-8">

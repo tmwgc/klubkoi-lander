@@ -16,11 +16,14 @@ const HeroSection: React.FC = () => {
       <div className="relative z-10 mt-0 mb-0 w-full max-w-[1156px] max-md:max-w-full">
         <div className="flex max-md:flex-col">
           <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/d0dfd29fa2b144da9ac1df062167f150/855d8198c4fd09731f00a3c787eb56ef804ddb290edf06103906301afa1e1845?apiKey=d0dfd29fa2b144da9ac1df062167f150&"
+            <Image
+              priority
+              loading="eager"
+              src="/images/hero1.png"
               alt="Gambling Experience"
               className="object-contain grow w-full aspect-[0.97] max-md:mt-2.5 max-md:max-w-full"
+              width={600}
+              height={600}
             />
           </div>
           <div className="flex flex-col justify-center w-[45%] max-md:ml-0 max-md:w-full">
