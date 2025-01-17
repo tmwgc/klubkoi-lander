@@ -3,19 +3,71 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-advent-pro: "Advent Pro", sans-serif;
+  --font-albert-sans: "Albert Sans", sans-serif;
+
+  --background: #0e0e0e;
+  --foreground: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-albert-sans);
+  overflow-x: hidden;
+}
+
+.font-albert-sans {
+  font-family: var(--font-albert-sans);
+}
+
+.font-advent-pro {
+  font-family: var(--font-advent-pro);
+}
+
+.hero-bg {
+  /* background-image: url("../../public/hero.svg"); */
+  background-image: url("../../public/hero-bg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download-btn {
+  background-image: url("../../public/icons/download-border.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.footer-bg {
+  background-color: rgba(14, 14, 14, 0.6);
+  background-image: url("../../public/images/footer-bg.png");
+  background-blend-mode: multiply;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.084) 0%,
+    rgba(217, 217, 217, 0.042) 100%
+  );
+  border: 1px solid #ffffff33;
+  border-left: none;
+  border-right: none;
+  margin-top: -20px;
+  backdrop-filter: blur(10px);
 }
