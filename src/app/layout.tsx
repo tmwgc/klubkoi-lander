@@ -14,7 +14,8 @@ const albertSans = Albert_Sans({
 
 export const metadata: Metadata = {
   title: "Koi",
-  description: "Experience the NEW AGE OF GAMBLING",
+  description:
+    "Experience the new age of gambling with KlubKoi, you are assured to experience gambling in a new dimension as never before",
 };
 
 export default function RootLayout({

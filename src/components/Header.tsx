@@ -8,6 +8,7 @@ const Header: React.FC = () => {
   const navLinks = ["Platform", "Community", "Resources"];
 
   return (
+    // <header className="flex justify-between items-center w-full relative px-5 py-9 pb-7 md:py-0 md:pb-0 md:px-20 header-bg bg-black-bg md:bg-transparent relative mb-5 md:mb-0">
     <header className="flex justify-between items-center w-full relative px-5 py-9 pb-7 md:py-12 md:pb-3 md:px-20 header-bg bg-black-bg md:bg-transparent relative mb-5 md:mb-0">
       <div className="flex items-center logo hidden md:flex">
         <Link href="/">
