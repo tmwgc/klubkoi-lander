@@ -29,10 +29,10 @@ const HeroSection: React.FC = () => {
           <div className="flex flex-col justify-center items-center md:items-start w-[50%] md:w-[45%] max-md:ml-0 max-md:w-full">
             <div className="flex relative flex-col text-white mt-0 max-md:mt-0">
               <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start">
-                <div className="text-4xl font-bold leading-10 tracking-[2.04px] max-md:text-3xl font-advent-pro text-center md:text-start">
+                <h1 className="text-4xl md:text-[40px] font-bold leading-10 tracking-[2.04px] max-md:text-3xl font-advent-pro text-center md:text-start">
                   EXPERIENCE THE
                   <br /> NEW AGE OF GAMBLING
-                </div>
+                </h1>
                 <div className="mt-3 text-base tracking-wider max-w-[100%] md:max-w-[70%] ">
                   With KlubKoi, you are assured to experience gambling in a new dimension as never
                   before
