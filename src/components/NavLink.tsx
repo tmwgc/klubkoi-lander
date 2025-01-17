@@ -7,7 +7,7 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ text }) => {
   return (
-    <Link href="/" className="text-sm text-center">
+    <Link href="/" className="text-sm font-medium text-white text-center">
       {text}
     </Link>
   );

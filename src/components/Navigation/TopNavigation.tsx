@@ -30,15 +30,21 @@ const rightNavItems = [
 const TopNavigation: React.FC = () => {
   return (
     <div className="max-w-[1400px] m-auto">
-      <nav className="flex flex-wrap gap-10 h-[40px] justify-between items-center self-center w-full text-sm font-medium text-center text-white  max-md:max-w-full px-8 py-3">
-        <div className="flex gap-8 items-center self-stretch my-auto min-w-[240px]">
+      <nav className="flex gap-5 md:gap-10 h-[40px] justify-between items-center self-center w-full text-sm font-medium text-center text-white  max-md:max-w-full px-4 md:px-8 py-3">
+        <div className="flex gap-4 md:gap-8 items-center self-stretch my-auto">
           {leftNavItems.map((item, index) => (
             <NavItem key={`left-${index}`} icon={item.icon} text={item.text} alt={item.alt} />
           ))}
         </div>
-        <div className="flex gap-10 items-center self-stretch my-auto min-w-[240px]">
+        <div className="flex gap-4 md:gap-8 items-center my-auto">
           {rightNavItems.map((item, index) => (
-            <NavItem key={`right-${index}`} icon={item.icon} text={item.text} alt={item.alt} />
+            <NavItem
+              key={`right-${index}`}
+              icon={item.icon}
+              text={item.text}
+              alt={item.alt}
+              showOnMobile
+            />
           ))}
         </div>
       </nav>

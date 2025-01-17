@@ -17,6 +17,16 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -34,10 +44,34 @@ body {
 
 .hero-bg {
   /* background-image: url("../../public/hero.svg"); */
-  background-image: url("../../public/hero-bg.png");
+  /* background-image: url("../../public/images/hero-bg-mobile.png"); */
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../public/images/hall.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../public/images/hero-bg-mobile.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .download-btn {
@@ -47,27 +81,106 @@ body {
   background-size: 100% 100%;
 }
 
+.primary-btn {
+  background-image: url("../../public/images/button-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
 .footer-bg {
-  background-color: rgba(14, 14, 14, 0.6);
+  background-color: rgba(14, 14, 14, 0.5);
   background-image: url("../../public/images/footer-bg.png");
   background-blend-mode: multiply;
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
+}
+
+.footer-gradient-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.084) 0%,
+    rgba(217, 217, 217, 0.042) 100%
+  );
+  backdrop-filter: blur(10px);
 }
 
 .marquee {
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
+  border: 1px solid #ffffff33;
+  border-left: none;
+  border-right: none;
+  margin-top: -20px;
+}
+
+.copyright {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.084) 0%,
     rgba(217, 217, 217, 0.042) 100%
   );
-  border: 1px solid #ffffff33;
-  border-left: none;
-  border-right: none;
-  margin-top: -20px;
   backdrop-filter: blur(10px);
+}
+
+.logo {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.scroll-absolute {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .header-bg {
+  position: relative;
+  z-index: -1;
+} */
+
+@media (min-width: 768px) {
+  .copyright {
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  .hero-bg {
+    /* background-image: url("../../public/images/hero-bg.png"); */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .footer-bg {
+    background-color: rgba(14, 14, 14, 0.6);
+    background-image: url("../../public/images/footer-bg.png");
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-bg::after {
+    background-image: url("../../public/images/hall.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../public/images/hero-bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
 }

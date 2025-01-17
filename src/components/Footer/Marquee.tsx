@@ -12,11 +12,11 @@ const marqueeItems = [
 
 const Marquee = () => {
   return (
-    <ReactMarquee>
+    <ReactMarquee autoFill>
       {marqueeItems.map((item, index) => (
-        <div key={index} className="flex items-center gap-2 mx-8">
+        <div key={index} className="flex items-center gap-2 mx-3 md:mx-5">
           <Image src={item.icon} alt={item.text} width={24} height={24} />
-          <span className="font-bold text-xl">{item.text}</span>
+          <span className="font-bold uppercase text-md md:text-xl">{item.text}</span>
         </div>
       ))}
     </ReactMarquee>

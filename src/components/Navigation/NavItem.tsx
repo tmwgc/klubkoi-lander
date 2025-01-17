@@ -5,11 +5,12 @@ interface NavItemProps {
   icon: string;
   text: string;
   alt: string;
+  showOnMobile?: boolean;
 }
 
-export const NavItem: React.FC<NavItemProps> = ({ icon, text, alt }) => {
+export const NavItem: React.FC<NavItemProps> = ({ icon, text, alt, showOnMobile }) => {
   return (
-    <div className="flex gap-1.5 items-center self-stretch my-auto cursour-pointer">
+    <div className={`flex gap-1.5 items-center my-auto cursour-pointer `}>
       <Image
         loading="lazy"
         src={icon}
@@ -18,7 +19,7 @@ export const NavItem: React.FC<NavItemProps> = ({ icon, text, alt }) => {
         width={14}
         height={14}
       />
-      <div className="self-stretch my-auto">{text}</div>
+      <div className={`self-stretch my-auto ${showOnMobile ? "hidden md:block" : ""}`}>{text}</div>
     </div>
   );
 };
