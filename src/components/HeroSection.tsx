@@ -5,7 +5,7 @@ import Header from "./Header";
 const HeroSection: React.FC = () => {
   return (
     <div className="max-w-[1400px] m-auto">
-      <div className="flex overflow-hidden relative flex-col w-full  max-md:max-w-full hero-bg">
+      <div className="flex overflow-hidden relative flex-col w-full max-md:max-w-full hero-bg">
         {/* <div className="flex overflow-hidden relative flex-col w-full min-h-[calc(100dvh-40px)] h-[calc(100dvh-40px)] max-md:max-w-full hero-bg"> */}
         {/* <img
         loading="lazy"
