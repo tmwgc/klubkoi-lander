@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterLegal = () => {
     return (
-      <section className="self-stretch my-auto text-base font-medium leading-5 text-justify text-gray-100 w-[55%] max-md:max-w-full">
+      <section className="self-stretch my-auto text-base font-medium leading-5 text-justify text-gray-100 w-[55%] max-md:max-w-full max-md:w-full">
         <p>
           Copyright © 2025 klubkoi.com. All rights reserved. KlubKoi is a brand
           name of Mayer Gaming N.V. Company Address: Zuikertuintjeweg Z/N

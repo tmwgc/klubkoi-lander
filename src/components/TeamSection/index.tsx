@@ -1,0 +1,83 @@
+import React from "react";
+import TeamMember from "./TeamMember";
+
+export const teamMembers = [
+  {
+    imageSrc: "/teams/member1.png",
+    name: "Salva Dalí",
+    role: "UX designer",
+  },
+  {
+    imageSrc: "/teams/member1.png",
+    name: "Salva Dalí",
+    role: "UX designer",
+  },
+  {
+    imageSrc: "/teams/member1.png",
+    name: "Salva Dalí",
+    role: "UX designer",
+  },
+  {
+    imageSrc: "/teams/member1.png",
+    name: "Salva Dalí",
+    role: "UX designer",
+  },
+];
+
+const TeamSection = () => {
+  return (
+    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full">
+      <div className="flex flex-col">
+        <div className="w-[85%] bg-[#575757] h-[1px]"></div>
+        <div className="flex flex-col items-start px-5 w-full max-md:pr-5 max-md:max-w-full">
+          <div className="py-16 w-full max-md:max-w-full relative">
+            <div className="flex items-center gap-5 max-md:flex-col">
+              <div className="flex flex-col w-[550px] max-md:ml-0 max-md:w-full">
+                <div className="w-full text-6xl font-semibold max-md:max-w-full max-md:text-4xl">
+                  <span className="gradient-text">Extraordinary Team Behind The Scenes</span>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-[16%] max-md:ml-0 max-md:w-full">
+                <div className="w-full bg-[#FFFFFF] h-[1px]"></div>
+              </div>
+              <div className="flex flex-col ml-5 w-[30%] max-md:ml-0 max-md:w-full">
+                <div className="mt-5 text-xl font-semibold text-white rotate-[1.7484555314694994e-7rad]">
+                  Know the team behind our extraordinary platform. We assembled the best minds to
+                  give life to Klubkoi
+                </div>
+              </div>
+            </div>
+            <div className="absolute right-0 top-0">
+              <svg
+                width="172"
+                height="172"
+                viewBox="0 0 172 172"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="max-md:w-[80px] max-md:h-[80px]"
+              >
+                <path
+                  d="M171.013 0.197266V120.928L149.173 99.0997V22.0257H72.1101L50.2705 0.197266H171.013Z"
+                  fill="#AFD149"
+                />
+                <path
+                  d="M121.437 51.0976V171.84L99.5979 150V72.9374H22.5349L0.695312 51.0976H121.437Z"
+                  fill="#EAFFB6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-[#575757] h-[1px]"></div>
+        <div className="grid grid-cols-4 gap-10 items-center py-16 max-md:grid-cols-2 max-md:gap-5 max-md:px-5">
+          {teamMembers.map((member, index) => (
+            <TeamMember key={index} {...member} />
+          ))}
+        </div>
+        <div className="w-full bg-[#575757] h-[1px]"></div>
+      </div>
+    </section>
+  );
+};
+
+export default TeamSection;

@@ -25,7 +25,7 @@ export const MissionList: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <article className="flex relative flex-col self-stretch my-auto w-full text-lg font-semibold leading-snug max-md:mt-10 max-md:max-w-full">
+    <article className="flex relative flex-col self-stretch my-auto w-full text-lg font-semibold leading-snug max-md:my-10 max-md:max-w-full max-md:px-5">
       <h2 className="self-start text-3xl font-bold gradient-text tracking-[5.76px]">MISSIONS</h2>
       {missions.map((mission, index) => (
         <MissionItem

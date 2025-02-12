@@ -11,7 +11,7 @@ const logos = [
 
 const FooterLogos = () => {
   return (
-    <section className="flex flex-col justify-center self-stretch my-auto w-[45%]">
+    <section className="flex flex-col justify-center self-stretch my-auto w-[45%] max-md:w-full">
       <div className="flex flex-wrap gap-9 items-center w-full px-20">
         {logos.map((logo, index) => (
           <Image

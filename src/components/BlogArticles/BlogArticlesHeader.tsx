@@ -12,7 +12,7 @@ export const BlogArticlesHeader: React.FC<BlogArticlesHeaderProps> = ({
   subtitle = "Read articles from our blog on casino"
 }) => {
   return (
-    <header className="flex flex-col justify-between items-center self-center w-full text-center max-md:mt-10 max-md:max-w-full">
+    <header className="flex flex-col justify-between items-center self-center w-full text-center max-md:max-w-full">
       <h1 className="text-4xl font-bold text-white tracking-[4.32px] max-md:max-w-full">
         {title}
       </h1>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Advent_Pro, Albert_Sans } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 
 const adventPro = Advent_Pro({
   variable: "--font-advent-pro",

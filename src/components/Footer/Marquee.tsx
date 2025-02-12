@@ -7,7 +7,6 @@ const marqueeItems = [
   { icon: "/icons/star.png", text: "SOCIAL METAVERSE" },
   { icon: "/icons/star.png", text: "IMMERSIVE EXPERIENCE" },
   { icon: "/icons/star.png", text: "COMMUNITY OWNED" },
-  // Add more items as needed
 ];
 
 const Marquee = () => {

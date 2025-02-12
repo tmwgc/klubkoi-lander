@@ -29,7 +29,7 @@ export const CasinoGamesExperience: React.FC = () => {
           Interdum tortor
         </p>
       </div>
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-4 max-md:grid-cols-2">
         {gameCards.map((card, index) => (
           <div key={index} className="relative aspect-[0.8]">
             <Image src={card.imageSrc} alt="" fill />

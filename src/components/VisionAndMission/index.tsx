@@ -11,7 +11,7 @@ export const VisionMissionSection: React.FC = () => {
         <div className="w-[57%] max-md:ml-0 max-md:w-full">
           <VisionCard />
         </div>
-        <div className="ml-5 w-[43%] max-md:ml-0 max-md:w-full">
+        <div className="ml-5 w-[43%] max-md:ml-0 max-md:w-full flex flex-col justify-center">
           <MissionList />
         </div>
       </div>
