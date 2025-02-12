@@ -54,7 +54,7 @@ export default function BasicMetrics() {
         </div>
         <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
           <div className="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
-            <div className="flex gap-3 self-start tracking-wider text-white">
+            <div className="flex gap-3 self-start items-center tracking-wider text-white">
               <h1 className="grow text-3xl font-light leading-none">Basic</h1>
               <span className="text-2xl font-bold leading-none">metrics</span>
             </div>

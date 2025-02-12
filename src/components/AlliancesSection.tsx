@@ -19,7 +19,7 @@ const AlliancesSection = () => {
         </div>
         <div className="ml-5 w-[42%] flex max-md:ml-0 max-md:w-full">
           <article className="relative self-stretch my-auto max-md:mt-10 max-md:max-w-full">
-            <div className="text-3xl font-bold">
+            <div className="text-3xl font-black">
               <span className="gradient-text">FORM ALLIANCES </span>
               AND PLAY VS TEAMS
             </div>
