@@ -6,7 +6,7 @@ import CopyRightFooter from "@/components/CopyRightFooter";
 import ExchangeList from "@/components/ExchangeList";
 import FAQSection from "@/components/FAQSection";
 import FeaturesSection from "@/components/FeatureSection";
-import { Footer } from "@/components/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection";
 import TopNavigation from "@/components/Navigation/TopNavigation";
 import { NewsHeadlines } from "@/components/NewsHeadlines";

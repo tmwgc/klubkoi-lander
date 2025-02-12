@@ -4,7 +4,7 @@ import { SocialIcons } from "./SocialIcons";
 import { FooterLinks } from "./FooterLinks";
 import Marquee from "./Marquee";
 
-export const Footer: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer>
       <div className="bg-[#6F6F6F7A] h-[1px] mt-6 w-full block md:hidden" />
@@ -114,3 +114,5 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
+
+export default Footer;

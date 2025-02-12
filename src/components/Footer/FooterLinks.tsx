@@ -1,19 +1,30 @@
 import * as React from "react";
-import { FooterLinkProps } from "./types";
 import Link from "next/link";
 
-const footerSections: FooterLinkProps[] = [
+const footerSections = [
   {
     title: "LEGAL",
-    links: ["Terms of Use", "Privacy Policies", "Contact Us"],
+    links: [
+      { name: "Terms of Use", link: "/terms-of-use" }, // This link has a valid URL
+      { name: "Privacy Policies", link: "/privacy-policy" }, // Empty link for now
+      { name: "Contact Us", link: "/contact-us" }, // Empty link for now
+    ],
   },
   {
     title: "COMMUNITY",
-    links: ["DAO & Governance", "Investor Relations", "Press Releases"],
+    links: [
+      { name: "DAO & Governance", link: "" },
+      { name: "Investor Relations", link: "" },
+      { name: "Press Releases", link: "" },
+    ],
   },
   {
     title: "RESOURCES",
-    links: ["articles", "Whitepaper", "Brandkit"],
+    links: [
+      { name: "articles", link: "" },
+      { name: "Whitepaper", link: "" },
+      { name: "Brandkit", link: "" },
+    ],
   },
 ];
 
@@ -26,8 +37,8 @@ export const FooterLinks: React.FC = () => {
             {section.title}
           </div>
           {section.links.map((link, linkIndex) => (
-            <Link href="/" key={linkIndex} className="mt-3.5">
-              {link}
+            <Link href={link.link || "#"} key={linkIndex} className="mt-3.5">
+              {link.name}
             </Link>
           ))}
         </div>
