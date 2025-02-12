@@ -18,7 +18,7 @@ export const SignupForm = () => {
       />
       <div className="flex relative flex-col max-w-full border-b border-black w-[693px]">
         <header className="flex flex-col w-full text-center text-gray-100 max-md:max-w-full">
-          <h1 className="text-5xl font-bold leading-10 bg-clip-text max-md:max-w-full">
+          <h1 className="text-5xl font-bold leading-10 bg-clip-text max-md:max-w-full max-md:text-4xl">
             <span className="gradient-text">Signup & Gain</span> Early Beta Access to our{" "}
             <span className="gradient-text">Gambling Platform</span>
           </h1>

@@ -36,8 +36,8 @@ export const PurchaseAndStake: React.FC = () => {
         </div>
       </div>
       <div
-        className="flex gap-5 blur-bg py-2 px-2 transform origin-bottom-left"
-        style={{ transform: "rotate(-2deg)" }}
+        className="flex gap-5 blur-bg py-2 px-2 transform rotate-[-2deg] origin-bottom-left max-md:flex-wrap"
+        // style={{ transform: "rotate(-2deg)" }}
       >
         {items.map((item, index) => (
           <div key={index} className="flex items-center gap-2 mx-3 md:mx-5">

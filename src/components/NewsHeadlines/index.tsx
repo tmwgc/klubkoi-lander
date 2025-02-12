@@ -33,7 +33,7 @@ export const NewsHeadlines = () => {
     <section className="max-w-[1400px] w-full m-auto max-md:max-w-full px-5 my-20">
       <div className="flex flex-col pb-36 max-md:pb-24">
         <div className="flex z-10 flex-wrap gap-10 mt-0 mb-20 w-full text-white px-10 max-md:max-w-full">
-          <h1 className="grow shrink text-5xl font-black leading-10 w-[415px] max-md:max-w-full">
+          <h1 className="grow shrink text-5xl font-black leading-10 w-[415px] max-md:max-w-full max-md:text-4xl">
             WE&#39;RE <span className="gradient-text">MAKING</span>
             <br />
             HEADLINES ON <span className="gradient-text">NEWS</span>

@@ -328,10 +328,30 @@ body {
   }
 }
 
-.section-blur-bg{
+.section-blur-bg {
   background-image: url("../../public/images/blur-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header-bg-2 {
+  position: relative;
+}
+
+.header-bg-2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../public/images/header-bg2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+
+  @media (max-width: 768px) {
+    background-image: url("../../public/images/header-bg2-mobile.png");
+    z-index: 0;
+  }
 }
 
 @media (min-width: 768px) {

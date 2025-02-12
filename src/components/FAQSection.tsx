@@ -40,10 +40,10 @@ export const FAQSection = () => {
       <div className="max-w-[1400px] w-full py-20 px-0 max-md:px-5 md:px-10 m-auto max-md:max-w-full border-b-[1px] border-[#575757]">
         <div className="flex flex-col items-center self-center w-full max-w-[946px] m-auto max-md:max-w-full">
           <header className="flex gap-6 justify-between items-center max-w-full max-md:flex-col max-md:items-start">
-            <h1 className="self-stretch my-auto text-6xl font-bold leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start">
+            <h1 className="self-stretch my-auto text-6xl font-bold leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start font-advent-pro">
               FAQ
             </h1>
-            <h2 className="self-stretch my-auto text-4xl font-semibold leading-none text-white tracking-[4.54px] max-md:max-w-full">
+            <h2 className="self-stretch my-auto text-4xl font-semibold leading-none text-white tracking-[4.54px] max-md:max-w-full font-advent-pro">
               Frequently Asked Questions
             </h2>
           </header>

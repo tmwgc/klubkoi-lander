@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <TopNavigation />
-      <Header />
+      <Header className="header-bg-2" />
       <main>{children}</main>
       <Footer />
     </>
