@@ -21,13 +21,13 @@ const ClubOrigin: React.FC = () => {
           alt="Klub Koi main visual"
         />
         <div className="flex relative flex-wrap gap-3.5 items-center mt-7 max-md:mr-2.5">
-          <div className="flex flex-col self-stretch my-auto text-7xl min-w-[240px] w-[372px] max-md:text-4xl">
+          <div className="flex flex-col self-stretch my-auto text-7xl min-w-[240px] max-w-[372px] max-md:w-full max-md:min-w-unset max-md:text-4xl">
             <Image
               loading="lazy"
               src="/images/track.svg"
               width={340}
               height={51}
-              className="object-contain self-center max-w-full aspect-[6.67] w-[340px]"
+              className="object-contain self-center max-w-full aspect-[6.67] max-w-[340px] w-full max-w-auto"
               alt="Klub Koi logo"
             />
             <div className="flex flex-col justify-between w-full text-6xl">

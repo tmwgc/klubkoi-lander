@@ -14,7 +14,7 @@ export const VisionCard: React.FC = () => {
         />
         <h2>OUR VISION</h2>
       </header>
-      <div className="flex flex-col items-start pl-16 max-md:pr-16 max-md:pl-5 max-md:max-w-full">
+      <div className="flex flex-col items-start pl-16 max-md:pr-16 max-md:pl-5 max-md:pr-5 max-md:max-w-full">
         <h3 className="text-5xl font-semibold leading-10 text-white max-md:max-w-full max-md:text-4xl max-md:leading-10">
           Shaping the
           <span className="gradient-text"> Future of Gambling </span>
