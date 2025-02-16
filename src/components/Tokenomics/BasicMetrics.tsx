@@ -60,9 +60,9 @@ export default function BasicMetrics() {
             </div>
             <div className="flex shrink-0 mt-5 h-px bg-teal-400 w-[51px]" />
             <p className="mt-6 mb-6 text-sm font-light tracking-wide leading-5 text-slate-300 max-md:mr-2.5 max-md:max-w-full">
-              AZERO is the native coin of the Aleph Zero platform and is used to secure the network
+              KOI is the native coin of the Klubkoi platform and is used to secure the network
               through staking, pay for fees, and provide a basic unit of account between the
-              multiple subnetworks created on the Aleph Zero platform.
+              players, investors and community.
             </p>
             <div className="flex flex-col gap-6">
               {metrics.map((metric, index) => (
