@@ -29,7 +29,7 @@ const BlogPostPreview: React.FC<BlogPostPreviewProps> = ({
         />
         <div className="w-full px-6 py-5">
           <div className="flex gap-5 justify-between max-w-full text-xs font-medium tracking-wide leading-6 text-center text-white whitespace-nowrap mb-5">
-            <span className="gap-2.5 px-3.5 py-1 my-auto bg-emerald-900 bg-opacity-60 rounded-[881px]">
+            <span className="gap-2.5 px-3.5 py-1 my-auto bg-[var(--secondary)] text-[#010B33] bg-opacity-60 rounded-[881px]">
               {tag}
             </span>
           </div>

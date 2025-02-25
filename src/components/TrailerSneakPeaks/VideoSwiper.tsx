@@ -42,7 +42,7 @@ export default function VideoSwiper() {
       {[...Array(5)].map((_, index) => (
         <SwiperSlide key={index} className="slide">
           <div className="w-full aspect-[16/9] rounded-lg ">
-            <div className="relative w-full h-full border-[1px] border-[#CFFF55] rounded-lg">
+            <div className="relative w-full h-full border-[1px] border-[var(--primary)] rounded-lg">
               <Image src="/images/sneak1.png" alt="" fill />
             </div>
           </div>

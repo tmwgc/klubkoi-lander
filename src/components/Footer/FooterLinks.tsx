@@ -37,7 +37,7 @@ export const FooterLinks: React.FC = () => {
             {section.title}
           </div>
           {section.links.map((link, linkIndex) => (
-            <Link href={link.link || "#"} key={linkIndex} className="mt-3.5">
+            <Link href={link.link || "#"} key={linkIndex} className="mt-8">
               {link.name}
             </Link>
           ))}

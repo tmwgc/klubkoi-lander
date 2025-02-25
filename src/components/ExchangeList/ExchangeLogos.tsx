@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 const exchangeLogos = [
-  "/exchange-logos/binance.svg",
-  "/exchange-logos/gemini.svg",
-  "/exchange-logos/blockchain.svg",
-  "/exchange-logos/dextools.png",
-  "/exchange-logos/coingecko.svg",
-  "/exchange-logos/coinmarketcap.svg",
+  "/exchange-logos/sushiswap.svg",
+  "/exchange-logos/uniswap.png",
+  "/exchange-logos/pancake.svg",
+  "/exchange-logos/jupiter.svg",
+  "/exchange-logos/orca.png",
+  "/exchange-logos/defillama.svg",
 ];
 
 export const ExchangeLogos = () => {

@@ -4,6 +4,14 @@ import { SocialIcons } from "./SocialIcons";
 import { FooterLinks } from "./FooterLinks";
 import Marquee from "./Marquee";
 
+const marqueeItems = [
+  { icon: "/icons/star.svg", text: "GAMBLE UNLIMITED" },
+  { icon: "/icons/star.svg", text: "SOCIAL METAVERSE" },
+  { icon: "/icons/star.svg", text: "IMMERSIVE EXPERIENCE" },
+  { icon: "/icons/star.svg", text: "COMMUNITY OWNED" },
+];
+
+
 const Footer: React.FC = () => {
   return (
     <footer>
@@ -13,7 +21,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="flex flex-col rounded-none footer-bg">
         <div className="marquee footer-gradient-bg py-2 md:py-3">
-          <Marquee />
+          <Marquee items={marqueeItems} />
         </div>
         <div className="max-w-[1400px] w-full px-0 md:px-10 m-auto max-md:max-w-full">
           <div className="flex gap-5 justify-between self-center mt-6 w-full pb-0 md:pb-8">
@@ -21,12 +29,12 @@ const Footer: React.FC = () => {
               <div className="self-center w-full max-w-full pl-5 px-5 md:px-0 md:pl-10">
                 <div className="flex gap-5 max-md:flex-col">
                   <div className="flex flex-row items-center gap-8 md:gap-0 md:flex-col w-[25%] max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow text-xs tracking-wide leading-4 text-white mt-0">
+                    <div className="flex flex-col grow text-xs tracking-wide leading-4 text-white mt-10 max-md:mt-0">
                       <Image
                         loading="lazy"
-                        src="/footer-logo.svg"
+                        src="/footer-logo.png"
                         alt="KlubKoi logo"
-                        className="object-contain aspect-square w-[84px]"
+                        className="object-contain aspect-square w-[auto] h-[106px]"
                         width={84}
                         height={84}
                       />
@@ -52,11 +60,26 @@ const Footer: React.FC = () => {
                   </div>
                   <div className="flex flex-col ml-5 w-[75%] max-md:ml-0 max-md:w-full hidden md:flex">
                     <FooterLinks />
+                    <div className="mt-12">
+                      <div className="flex flex-auto gap-2 md:gap-4 items-start">
+                        <div className="text-[8px] md:text-sm font-bold leading-4 text-white uppercase tracking-initial md:tracking-[3.03px]">
+                          CONSULTING
+                          <br />
+                          partner
+                        </div>
+                        <Image
+                          src="/images/consulting-partner.png"
+                          alt="technology-partner"
+                          width={160}
+                          height={55}
+                          className="w-[80px] md:w-[160px] md:h-[55px]"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#6F6F6F7A] h-[1px] mt-6 w-[90%] hidden md:block" />
-              <div className="flex gap-10 mt-8 md:mt-5 items-center max-w-full pl-5 px-5 justify-center w-full md:w-[initial] md:pl-10 md:px-0">
+              {/* <div className="flex gap-10 mt-8 md:mt-5 items-center max-w-full pl-5 px-5 justify-center w-full md:w-[initial] md:pl-10 md:px-0">
                 <div className="flex flex-auto gap-2 md:gap-4 items-start">
                   <div className="text-[8px] md:text-sm font-bold leading-4 text-white uppercase tracking-initial md:tracking-[3.03px]">
                     TECHNOLOGY
@@ -85,7 +108,7 @@ const Footer: React.FC = () => {
                     className="w-[80px] md:w-[160px] md:h-[55px]"
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="bg-[#6F6F6F7A] h-[1px] mt-6 w-[75%] hidden md:block" />
               <div className="flex gap-9 mt-5 max-w-full pl-10 copyright w-full py-2 md:py-0">
                 <SocialIcons />

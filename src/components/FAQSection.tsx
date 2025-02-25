@@ -37,15 +37,21 @@ export const FAQSection = () => {
 
   return (
     <section>
-      <div className="max-w-[1400px] w-full py-20 px-0 max-md:px-5 md:px-10 m-auto max-md:max-w-full border-b-[1px] border-[#575757]">
-        <div className="flex flex-col items-center self-center w-full max-w-[946px] m-auto max-md:max-w-full">
-          <header className="flex gap-6 justify-between items-center max-w-full max-md:flex-col max-md:items-start">
-            <h1 className="self-stretch my-auto text-6xl font-bold leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start font-advent-pro">
-              FAQ
-            </h1>
-            <h2 className="self-stretch my-auto text-4xl font-semibold leading-none text-white tracking-[4.54px] max-md:max-w-full font-advent-pro">
-              Frequently Asked Questions
-            </h2>
+      <div className="max-w-[1400px] w-full py-20 px-0 max-md:px-5 md:px-10 m-auto max-md:max-w-full">
+        <div className="flex flex-col items-center self-center w-full m-auto max-md:max-w-full">
+          <header className="flex gap-12 justify-between items-center max-w-full max-md:flex-col max-md:items-start">
+            <div className="flex gap-6">
+              <h1 className="self-stretch my-auto text-6xl font-bold leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start font-advent-pro">
+                <span className="gradient-text">FAQ</span>
+              </h1>
+              <h2 className="self-stretch my-auto text-4xl font-semibold leading-none text-white tracking-[4.54px] max-md:max-w-full">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <p>
+              Be it anything, we got you covered with our comprehensive knowledgebase that might
+              help you understand our platform better and play professionally.
+            </p>
           </header>
           <div className="mt-16 w-full rounded-none max-md:mt-10">
             <div className="flex max-md:flex-col">
@@ -63,7 +69,7 @@ export const FAQSection = () => {
                     >
                       <div className="flex gap-5 justify-between items-center max-md:max-w-full">
                         <div className="flex gap-3.5 items-start self-stretch my-auto min-w-60 max-md:max-w-full">
-                          <div className="flex shrink-0 bg-lime-100 rounded-full h-[19px] w-[19px]" />
+                          <div className="flex shrink-0 bg-[#F8DEFF] rounded-full h-[19px] w-[19px]" />
                           <p className="text-start">{faq.question}</p>
                         </div>
                         <div className="w-[20px] h-[20px]">
@@ -76,7 +82,7 @@ export const FAQSection = () => {
                           >
                             <path
                               d="M7.08789 3.35254L13.3917 9.65634L7.08789 15.9601"
-                              stroke="#EAFFB6"
+                              stroke="#F8DEFF"
                               strokeWidth="1.57595"
                               strokeLinecap="round"
                               strokeLinejoin="round"

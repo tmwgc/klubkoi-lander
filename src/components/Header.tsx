@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const Header: React.FC<{ className?: string }> = ({ className = "header-bg" }) => {
   const navLinks = [
-    { name: "Platform", link: "/invesment-portal" },
-    { name: "Community", link: "/community" },
-    { name: "Resources", link: "/resources" },
+    { name: "Gameplay", link: "/#gameplay" },
+    { name: "Tokenomics", link: "/#tokenomics" },
+    { name: "Early Access", link: "/#early-access" },
   ];
 
   return (
@@ -27,6 +27,7 @@ const Header: React.FC<{ className?: string }> = ({ className = "header-bg" }) =
               width={155}
               height={55}
               objectFit={"contain"}
+              className="h-[58px] w-auto"
             />
           </Link>
         </div>

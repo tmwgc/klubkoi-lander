@@ -8,7 +8,10 @@ export const SignupForm = () => {
   const [walletAddress, setWalletAddress] = useState("");
 
   return (
-    <section className="flex relative flex-col items-center px-20 pt-14 pb-24 mt-4 w-full min-h-[593px] max-md:px-5 max-md:max-w-full">
+    <section
+      id="early-access"
+      className="flex relative flex-col items-center px-20 pt-14 pb-24 mt-4 w-full min-h-[593px] max-md:px-5 max-md:max-w-full"
+    >
       <Image
         loading="lazy"
         src="/images/signup-bg.svg"
@@ -19,8 +22,8 @@ export const SignupForm = () => {
       <div className="flex relative flex-col max-w-full border-b border-black w-[693px]">
         <header className="flex flex-col w-full text-center text-gray-100 max-md:max-w-full">
           <h1 className="text-5xl font-bold leading-10 bg-clip-text max-md:max-w-full max-md:text-4xl">
-            <span className="gradient-text">Signup & Gain</span> Early Beta Access to our{" "}
-            <span className="gradient-text">Gambling Platform</span>
+            <span className="gradient-text">Signup for </span>Early Access &{" "}
+            <span className="gradient-text">Airdrops</span>
           </h1>
           <p className="self-center mt-4 text-base font-medium leading-5 max-md:max-w-full">
             We&#39;re selecting handpicked first 100 player to experience our working product and

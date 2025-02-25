@@ -6,15 +6,15 @@ import { FeatureCard } from "./FeatureCard";
 const featuresData = [
   {
     icon: "/features/feature1.svg",
-    title: "Immersive Experience",
+    title: "Immersive Gameplay",
     description:
       "Klub Koi offers users an immersive experience by combining innovative virtual environments with engaging gameplay and traditional gambling. Players are transported into a dynamic, interactive world where they can wager, compete, and customize their journey, blending entertainment with personalization like never before.",
   },
   {
     icon: "/features/feature2.svg",
-    title: "Community Ownership",
+    title: "Community Owned",
     description:
-      "Klub Koi evolves online wagering by offering a platform where the community owns a majority stake in its success. Through profit-sharing across all revenue streams, dedicated participants directly benefit from the platform's growth, ensuring alignment between player engagement and financial rewards.",
+      "Klub Koi evolves online wagering by offering a platform where the community owns a majority stake in its success. Through profit-sharing across all revenue streams, dedicated participants directly benefit from the platform’s growth, ensuring alignment between player engagement and financial rewards.",
   },
   {
     icon: "/features/feature3.svg",
@@ -35,14 +35,11 @@ export const FeaturesSection = () => {
     <section className="max-w-[1400px] w-full m-auto max-md:max-w-full pt-12">
       <div className="flex flex-col items-center px-5 feature-bg">
         <header className="max-w-full text-center w-[924px]">
-          <h1 className="text-5xl font-black text-lime-300 uppercase max-md:max-w-full max-md:text-4xl">
-            WE STAND OUT <span className="text-white">FROM THE REST</span>
+          <h1 className="text-5xl font-black uppercase max-md:max-w-full max-md:text-4xl">
+            HOW <span className="gradient-text">KOI</span> IS UNIQUE
           </h1>
           <p className="mt-4 text-lg font-medium tracking-wide leading-6 text-neutral-200 max-md:max-w-full">
-            Since 2018 the main goal of Bitlocus has been to remove the complexity of the crypto
-            space
-            <br />
-            for fiat users. Our products between fiat and crypto.
+            Since 2020, the main goals of Koi has been directed based on the following principles
           </p>
         </header>
         <div className="flex flex-col mt-11 w-full max-md:mt-10 max-md:max-w-full">

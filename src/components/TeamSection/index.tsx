@@ -4,23 +4,23 @@ import TeamMember from "./TeamMember";
 export const teamMembers = [
   {
     imageSrc: "/teams/member1.png",
-    name: "Salva Dalí",
-    role: "UX designer",
+    name: "Mstt",
+    role: "Project Founder",
   },
   {
-    imageSrc: "/teams/member1.png",
-    name: "Salva Dalí",
-    role: "UX designer",
+    imageSrc: "/teams/member2.png",
+    name: "Sam",
+    role: "Chief Technical Officer",
   },
   {
-    imageSrc: "/teams/member1.png",
-    name: "Salva Dalí",
-    role: "UX designer",
+    imageSrc: "/teams/member3.png",
+    name: "Bobby",
+    role: "Chief Financial Officer",
   },
   {
-    imageSrc: "/teams/member1.png",
-    name: "Salva Dalí",
-    role: "UX designer",
+    imageSrc: "/teams/member4.png",
+    name: "Hannah",
+    role: "Chief Marketing Officer",
   },
 ];
 
@@ -34,7 +34,7 @@ const TeamSection = () => {
             <div className="flex items-center gap-5 max-md:flex-col">
               <div className="flex flex-col w-[550px] max-md:ml-0 max-md:w-full">
                 <div className="w-full text-6xl font-semibold max-md:max-w-full max-md:text-4xl">
-                  <span className="gradient-text">Extraordinary Team Behind The Scenes</span>
+                  Meet The <span className="gradient-text">Team Building Koi</span>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-[16%] max-md:ml-0 max-md:w-full">
@@ -57,19 +57,19 @@ const TeamSection = () => {
                 className="max-md:w-[80px] max-md:h-[80px]"
               >
                 <path
-                  d="M171.013 0.197266V120.928L149.173 99.0997V22.0257H72.1101L50.2705 0.197266H171.013Z"
-                  fill="#AFD149"
+                  d="M171.013 0.196777V120.928L149.173 99.0992V22.0253H72.1102L50.2706 0.196777H171.013Z"
+                  fill="#F3C9FF"
                 />
                 <path
                   d="M121.437 51.0976V171.84L99.5979 150V72.9374H22.5349L0.695312 51.0976H121.437Z"
-                  fill="#EAFFB6"
+                  fill="#BCACFF"
                 />
               </svg>
             </div>
           </div>
         </div>
         <div className="w-full bg-[#575757] h-[1px]"></div>
-        <div className="grid grid-cols-4 gap-10 items-center py-16 max-md:grid-cols-2 max-md:gap-5 max-md:px-5">
+        <div className="grid grid-cols-4 gap-2 items-center py-16 max-md:grid-cols-2 max-md:gap-5 max-md:px-5">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}

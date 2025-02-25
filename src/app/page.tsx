@@ -25,11 +25,11 @@ export default function Home() {
       <HeroSection />
       <ClubOrigin />
       <TrailerSneakpeaks />
-{/*       <CasinoGamesExperience />
+      {/*       <CasinoGamesExperience />
       <RandomChatsSection />
       <AlliancesSection /> */}
-          <FeaturesSection />
-      <VisionAndMission />   
+      <VisionAndMission />
+      <FeaturesSection />
       <Tokenomics />
       <ExchangeList />
       <PurchaseAndStake />

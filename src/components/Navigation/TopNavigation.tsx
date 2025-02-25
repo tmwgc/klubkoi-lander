@@ -5,6 +5,7 @@ const leftNavItems = [
   {
     icon: "/icons/user.svg",
     text: "Investor Relations",
+    link: "/invesment-portal",
     alt: "Investor relations icon",
   },
   {
@@ -33,18 +34,12 @@ const TopNavigation: React.FC = () => {
       <nav className="flex gap-5 md:gap-10 h-[40px] justify-between items-center self-center w-full text-sm font-medium text-center text-white  max-md:max-w-full px-4 md:px-8 py-3">
         <div className="flex gap-4 md:gap-8 items-center self-stretch my-auto">
           {leftNavItems.map((item, index) => (
-            <NavItem key={`left-${index}`} icon={item.icon} text={item.text} alt={item.alt} />
+            <NavItem key={`left-${index}`} {...item} />
           ))}
         </div>
         <div className="flex gap-4 md:gap-8 items-center my-auto">
           {rightNavItems.map((item, index) => (
-            <NavItem
-              key={`right-${index}`}
-              icon={item.icon}
-              text={item.text}
-              alt={item.alt}
-              showOnMobile
-            />
+            <NavItem key={`right-${index}`} {...item} showOnMobile />
           ))}
         </div>
       </nav>

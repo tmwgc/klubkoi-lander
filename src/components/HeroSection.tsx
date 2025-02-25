@@ -1,8 +1,13 @@
+"use client";
+
 import * as React from "react";
 import Image from "next/image";
 import Header from "./Header";
+import { useRouter } from "next/navigation";
 
 const HeroSection: React.FC = () => {
+  const router = useRouter();
+
   return (
     <div className="max-w-[1400px] m-auto">
       <div className="flex overflow-hidden relative flex-col w-full max-md:max-w-full hero-bg">
@@ -16,12 +21,12 @@ const HeroSection: React.FC = () => {
       /> */}
         <Header />
         <div className="relative z-10 mt-0 mb-0 w-full max-w-full mt-5 md:mt-0 max-md:max-w-full px-10 md:px-20">
-          <div className="flex max-md:flex-col-reverse">
+          {/* <div className="flex max-md:flex-col-reverse">
             <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full max-md:justify-center">
               <Image
                 priority
                 loading="eager"
-                src="/images/hero1.png"
+                src="/images/hero-avatar.png"
                 alt="Gambling Experience"
                 className="object-contain grow w-full md:w-[90%] aspect-[0.97] max-md:mt-0 max-md:max-w-full"
                 width={600}
@@ -55,6 +60,32 @@ const HeroSection: React.FC = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div> */}
+          <div className="flex flex-col pt-12">
+            <div className="flex items-center justify-between gap-8 w-[80%] m-auto max-md:flex-col max-md:justify-center">
+              <h1 className="text-5xl font-black leading-10 text-white max-md:max-w-full max-md:text-3xl">
+                <span className="gradient-text">EXPERIENCE</span> THE ERA OF
+                <br />
+                <span className="gradient-text">BLOCKCHAIN</span> GAMBLING
+              </h1>
+              <button
+                onClick={() => router.push("/")}
+                className="px-6 py-2 max-w-[260px] w-full uppercase text-md font-bold font-advent-pro primary-btn"
+              >
+                LAUNCH CASINO
+              </button>
+            </div>
+            <div className="w-[80%] m-auto">
+              <Image
+                priority
+                loading="eager"
+                src="/images/hero-avatar.png"
+                alt="Gambling Experience"
+                className="object-contain grow w-full md:w-[90%] max-md:mt-0 max-md:max-w-full"
+                width={600}
+                height={600}
+              />
             </div>
           </div>
           <div className="max-w-[260px] w-full flex flex-col items-center mt-5 flex md:hidden scroll-absolute">
