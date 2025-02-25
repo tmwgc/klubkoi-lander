@@ -2,10 +2,35 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export const SignupForm = () => {
   const [email, setEmail] = useState("");
   const [walletAddress, setWalletAddress] = useState("");
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await emailjs.send(
+        "service_6ge1ez9",
+        "template_j2pciqw",
+        {
+          email: email,
+          walletAddress: walletAddress,
+        },
+        "h20qnOesfK5gqxYo5"
+      );
+
+      console.log("Email sent successfully!", response);
+      alert("Email sent successfully!");
+      setEmail("");
+      setWalletAddress("");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email. Please try again.");
+    }
+  };
 
   return (
     <section
@@ -32,10 +57,7 @@ export const SignupForm = () => {
             issued with Koi Tokens for exploring features in the platform
           </p>
         </header>
-        <form
-          className="self-center mt-12 max-w-full w-[619px] max-md:mt-10"
-          // onSubmit={(e) => e.preventDefault()}
-        >
+        <form className="self-center mt-12 max-w-full w-[619px] max-md:mt-10" onSubmit={sendEmail}>
           <div className="flex gap-2.5 items-center px-5 py-4 w-full rounded-sm bg-neutral-600 bg-opacity-80 min-h-[55px] max-md:max-w-full">
             <div className="flex items-center justify-center my-auto w-6 aspect-square">
               <svg
@@ -67,6 +89,7 @@ export const SignupForm = () => {
               placeholder="Email Address"
               className="bg-transparent border-none text-white text-sm font-semibold leading-6 focus:outline-none w-full"
               aria-label="Email Address"
+              required
             />
           </div>
           <div className="flex gap-2.5 items-center px-5 py-4 mt-6 w-full rounded-sm bg-neutral-600 bg-opacity-80 min-h-[55px] max-md:max-w-full">
@@ -91,6 +114,7 @@ export const SignupForm = () => {
               placeholder="Paste Solana Testnet Contract Address"
               className="bg-transparent border-none text-white text-sm font-semibold leading-6 focus:outline-none w-full"
               aria-label="Solana Testnet Contract Address"
+              required
             />
           </div>
           <button
