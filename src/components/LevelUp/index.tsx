@@ -6,7 +6,7 @@ const LevelUp = () => {
     <section className="levelup-bg max-w-[1600px] w-full m-auto max-md:max-w-full pt-12 pb-20 px-10 border-b-[1px] border-[var(--divider)]">
       <div className="flex gap-10 items-center max-md:max-w-full max-md:flex-col">
         <section className="flex flex-col justify-center self-stretch my-auto w-[45%] max-md:w-full">
-          <div className="pl-32 mt-16">
+          <div className="pl-32 mt-16 max-md:pl-16">
             <Image
               src="/images/levelup.png"
               alt="level up"

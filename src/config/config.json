@@ -1,0 +1,167 @@
+{
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Be it anything, we got you covered with our comprehensive knowledgebase that might help you understand our platform better and play professionally.",
+    "topics": [
+      {
+        "topic": "General Platform Information",
+        "questions": [
+          {
+            "question": "How does Klub Koi integrate gameplay with traditional gambling?",
+            "answer": ""
+          },
+          {
+            "question": "What types of games and wagering options are available on Klub Koi?",
+            "answer": ""
+          },
+          {
+            "question": "What platforms does Instapay payment gateway support?",
+            "answer": ""
+          },
+          {
+            "question": "Does Instapay provide international payments support?",
+            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+          },
+          {
+            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "topic": "Transparency & Security",
+        "questions": [
+          {
+            "question": "What is a Payment Gateway?",
+            "answer": ""
+          },
+          {
+            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "answer": ""
+          },
+          {
+            "question": "What platforms does Instapay payment gateway support?",
+            "answer": ""
+          },
+          {
+            "question": "Does Instapay provide international payments support?",
+            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+          },
+          {
+            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "topic": "Blockchain & Web3 Integration",
+        "questions": [
+          {
+            "question": "What is a Payment Gateway?",
+            "answer": ""
+          },
+          {
+            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "answer": ""
+          },
+          {
+            "question": "What platforms does Instapay payment gateway support?",
+            "answer": ""
+          },
+          {
+            "question": "Does Instapay provide international payments support?",
+            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+          },
+          {
+            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "topic": "Gameplay & Mechanics",
+        "questions": [
+          {
+            "question": "What is a Payment Gateway?",
+            "answer": ""
+          },
+          {
+            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "answer": ""
+          },
+          {
+            "question": "What platforms does Instapay payment gateway support?",
+            "answer": ""
+          },
+          {
+            "question": "Does Instapay provide international payments support?",
+            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+          },
+          {
+            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "topic": "Technical & Legal",
+        "questions": [
+          {
+            "question": "What is a Payment Gateway?",
+            "answer": ""
+          },
+          {
+            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "answer": ""
+          },
+          {
+            "question": "What platforms does Instapay payment gateway support?",
+            "answer": ""
+          },
+          {
+            "question": "Does Instapay provide international payments support?",
+            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+          },
+          {
+            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "answer": ""
+          }
+        ]
+      }
+    ]
+  },
+  "blogs": [
+    {
+      "imageSrc": "/blogs/casino.png",
+      "date": "Janusary 2, 2023",
+      "title": "Bitlocus recap january 2023"
+    },
+    {
+      "imageSrc": "/blogs/casino.png",
+      "date": "Janusary 2, 2023",
+      "title": "Bitlocus recap january 2023"
+    },
+    {
+      "imageSrc": "/blogs/casino.png",
+      "date": "Janusary 2, 2023",
+      "title": "Bitlocus recap january 2023"
+    }
+  ],
+  "disclaimer": [
+    "By using Koi, users acknowledge and accept the risks associated with online wagering and blockchain-based transactions. The platform is designed for entertainment purposes and does not guarantee financial returns. Users should exercise caution and gamble responsibly.",
+
+    "Gambling should be treated as a form of entertainment, not a source of income. Players should only wager funds they can afford to lose. Koi encourages responsible gaming and provides tools for users to set limits on their participation. If gambling becomes problematic, players should seek assistance from professional responsible gaming organizations. Koi is not responsible for compulsive or excessive gambling behaviors.",
+
+    "Koi is only accessible to users 21 years of age or older who are legally permitted to participate in online gambling. Users are solely responsible for ensuring that they comply with all local laws and regulations regarding online wagering. Koi does not assume liability for unauthorized access by underage or restricted users. Any attempt to bypass jurisdictional restrictions through VPNs or other means is considered a violation of platform policies and may result in account suspension.",
+
+    "All wagers, KOI token transactions, and staking activities involve financial risk. Users understand that gambling outcomes are determined by chance, skill, or market fluctuations and that losses may occur. Koi does not provide any guarantee of winnings, investment returns, or financial stability. Players accept full responsibility for their betting decisions and should not wager funds needed for essential expenses.",
+
+    "Koi operates on blockchain technology, and all transactions involving the KOI token are subject to market volatility, liquidity risks, and transaction fees. The platform does not control token price fluctuations, external exchanges, or third-party wallet services. Users are responsible for managing their assets securely, and Koi assumes no liability for lost, stolen, or devalued tokens due to market conditions or user negligence. Once executed, blockchain transactions cannot be reversed or refunded.",
+
+    "Koi employs rigorous security protocols and fairness mechanisms to ensure a transparent gaming experience. However, users must take responsibility for securing their accounts, wallets, and private keys. Koi will never request a user's private key or password. The platform is not responsible for hacking incidents, phishing scams, or fraudulent activities caused by user negligence. Players engaging in cheating, game exploitation, or unauthorized manipulation of platform mechanics will face account suspension and forfeiture of funds.",
+
+    "By participating in Koi, users agree to comply with the platform's Terms of Use. Koi reserves the right to update policies, adjust platform mechanics, and implement security measures to maintain fairness and legal compliance. Continued use of the platform constitutes acknowledgment of these terms.",
+
+    "If you have concerns regarding responsible gambling, security, or regulatory compliance, please review our Responsible Gambling Policy, Privacy Policy, and Terms & Conditions for more information."
+  ]
+}

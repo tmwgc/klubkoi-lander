@@ -8,7 +8,7 @@ interface LevelCardProps {
 
 const LevelCard: React.FC<LevelCardProps> = ({ image, description }) => {
   return (
-    <div className="grid grid-cols-[240px_auto] items-center gap-10">
+    <div className="grid grid-cols-[240px_auto] max-md:grid-cols-1 items-center gap-10 max-md:gap-2">
       <Image
         src={image}
         alt="level up"

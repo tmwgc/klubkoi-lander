@@ -29,7 +29,7 @@ const InvestmentPromotion = () => {
           Become an investor today and Gain high ROI with our Web3 centric, community run casino
           investment schemes and gain access to added advantages.
         </div>
-        <button className="gap-1.5 self-center px-1.5 py-2.5 mt-11 max-w-full w-full text-base font-medium leading-none text-black rounded-sm shadow-xl btn-gradient min-h-[34px]">
+        <button className="gap-1.5 self-center px-1.5 py-2.5 mt-11 max-w-full w-full text-base font-medium leading-none text-black rounded-sm btn-gradient min-h-[34px]">
           Apply to become an investor
         </button>
       </div>

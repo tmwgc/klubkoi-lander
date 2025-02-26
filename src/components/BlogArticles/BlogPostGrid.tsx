@@ -1,23 +1,6 @@
 import React from "react";
 import BlogPostPreview from "./BlogPostPreview";
-
-const blogs = [
-  {
-    imageSrc: "/blogs/casino.png",
-    date: "Janusary 2, 2023",
-    title: "Bitlocus recap january 2023",
-  },
-  {
-    imageSrc: "/blogs/casino.png",
-    date: "Janusary 2, 2023",
-    title: "Bitlocus recap january 2023",
-  },
-  {
-    imageSrc: "/blogs/casino.png",
-    date: "Janusary 2, 2023",
-    title: "Bitlocus recap january 2023",
-  },
-];
+import { blogs } from "@/config";
 
 const BlogPostGrid: React.FC = () => {
   return (

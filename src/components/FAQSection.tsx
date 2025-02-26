@@ -1,155 +1,10 @@
 "use client";
 
+import { faq } from "@/config";
 import React, { useState } from "react";
 
-interface FAQItem {
-  topic: string;
-  questions: {
-    question: string;
-    answer: string;
-  }[];
-}
-
-const faqData: FAQItem[] = [
-  {
-    topic: "General Platform Information",
-    questions: [
-      {
-        question: "How does Klub Koi integrate gameplay with traditional gambling?",
-        answer: "",
-      },
-      {
-        question:
-          "Do I need to pay to Instapay even when there is no transaction going on in my business?",
-        answer: "",
-      },
-      {
-        question: "What platforms does Instapay payment gateway support?",
-        answer: "",
-      },
-      {
-        question: "Does Instapay provide international payments support?",
-        answer:
-          "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED.",
-      },
-      {
-        question: "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
-        answer: "",
-      },
-    ],
-  },
-  {
-    topic: "Transparency & Security",
-    questions: [
-      {
-        question: "What is a Payment Gateway?",
-        answer: "",
-      },
-      {
-        question:
-          "Do I need to pay to Instapay even when there is no transaction going on in my business?",
-        answer: "",
-      },
-      {
-        question: "What platforms does Instapay payment gateway support?",
-        answer: "",
-      },
-      {
-        question: "Does Instapay provide international payments support?",
-        answer:
-          "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED.",
-      },
-      {
-        question: "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
-        answer: "",
-      },
-    ],
-  },
-  {
-    topic: "Blockchain & Web3 Integration",
-    questions: [
-      {
-        question: "What is a Payment Gateway?",
-        answer: "",
-      },
-      {
-        question:
-          "Do I need to pay to Instapay even when there is no transaction going on in my business?",
-        answer: "",
-      },
-      {
-        question: "What platforms does Instapay payment gateway support?",
-        answer: "",
-      },
-      {
-        question: "Does Instapay provide international payments support?",
-        answer:
-          "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED.",
-      },
-      {
-        question: "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
-        answer: "",
-      },
-    ],
-  },
-  {
-    topic: "Gameplay & Mechanics",
-    questions: [
-      {
-        question: "What is a Payment Gateway?",
-        answer: "",
-      },
-      {
-        question:
-          "Do I need to pay to Instapay even when there is no transaction going on in my business?",
-        answer: "",
-      },
-      {
-        question: "What platforms does Instapay payment gateway support?",
-        answer: "",
-      },
-      {
-        question: "Does Instapay provide international payments support?",
-        answer:
-          "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED.",
-      },
-      {
-        question: "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
-        answer: "",
-      },
-    ],
-  },
-  {
-    topic: "Technical & Legal",
-    questions: [
-      {
-        question: "What is a Payment Gateway?",
-        answer: "",
-      },
-      {
-        question:
-          "Do I need to pay to Instapay even when there is no transaction going on in my business?",
-        answer: "",
-      },
-      {
-        question: "What platforms does Instapay payment gateway support?",
-        answer: "",
-      },
-      {
-        question: "Does Instapay provide international payments support?",
-        answer:
-          "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED.",
-      },
-      {
-        question: "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
-        answer: "",
-      },
-    ],
-  },
-];
-
 export const FAQSection = () => {
-  const [selectedTopic, setSelectedTopic] = useState(faqData[0]);
+  const [selectedTopic, setSelectedTopic] = useState(faq.topics[0]);
   const [selectedQuestion, setSelectedQuestion] = useState<string>(
     selectedTopic.questions[0].question
   );
@@ -175,15 +30,15 @@ export const FAQSection = () => {
         </div>
       </div>
       <div className="max-w-[1600px] w-full py-0 px-0 max-md:px-5 md:px-10 m-auto max-md:max-w-full">
-        <div className="grid grid-cols-5 gap-2">
-          {faqData.map((faq, index) => (
+        <div className="flex overflow-x-auto gap-5">
+          {faq.topics.map((faq, index) => (
             <button
               key={index}
               onClick={() => {
                 setSelectedTopic(faq);
                 setSelectedQuestion(faq.questions[0].question);
               }}
-              className={`flex flex-col items-center justify-center w-full py-5 text-lg font-medium leading-none text-start ${
+              className={`flex flex-col items-center justify-center w-full py-5 text-lg max-md:text-sm font-medium leading-none text-start ${
                 selectedTopic === faq ? "faq-active" : "text-white"
               }`}
             >

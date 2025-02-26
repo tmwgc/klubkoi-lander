@@ -18,7 +18,7 @@ const LoginPortal: React.FC<LoginPortalProps> = ({ className, title, subtitle, d
       <div className="flex flex-col">
         <div className="flex flex-col justify-between w-full min-h-[134px]">
           <div className="flex flex-col justify-center items-center self-center">
-            <div className="text-2xl leading-none text-lime-300 tracking-[5.76px] uppercase">
+            <div className="text-2xl leading-none gradient-text tracking-[5.76px] uppercase">
               {title}
             </div>
             <div className="mt-2.5 text-3xl font-bold leading-none text-white tracking-[3.84px] uppercase">
@@ -45,7 +45,7 @@ const LoginPortal: React.FC<LoginPortalProps> = ({ className, title, subtitle, d
           />
           <button
             type="submit"
-            className="gap-1.5 self-stretch px-1.5 py-3.5 mt-2.5 w-full text-base font-medium leading-none text-black rounded-sm shadow-2xl min-h-[42px] btn-gradient"
+            className="gap-1.5 self-stretch px-1.5 py-3.5 mt-2.5 w-full text-base font-medium leading-none text-black rounded-sm min-h-[42px] btn-gradient"
           >
             Login Now
           </button>
