@@ -91,7 +91,7 @@ const Header: React.FC<{ className?: string }> = ({ className = "header-bg" }) =
             </button>
           </Link>
         </div>
-        <div className="flex gap-2 max-md:gap-1 items-center justify-evenly absolute top-[100%] left-10 right-10 -translate-y-1/2 border border-[#7E7070] bg-black-bg rounded-3xl flex md:hidden px-2">
+        <div className="flex gap-2 max-md:gap-0 items-center justify-evenly absolute top-[100%] left-10 right-10 -translate-y-1/2 border border-[#7E7070] bg-black-bg rounded-3xl flex md:hidden px-2">
           {navLinks.map((link, idx) => (
             <Link
               key={idx}

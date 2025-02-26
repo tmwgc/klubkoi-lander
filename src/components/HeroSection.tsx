@@ -63,11 +63,10 @@ const HeroSection: React.FC = () => {
             </div>
           </div> */}
           <div className="flex flex-col pt-12">
-            <div className="flex items-center justify-between gap-8 w-[80%] m-auto max-md:flex-col max-md:justify-center">
-              <h1 className="text-5xl font-black leading-10 text-white max-md:max-w-full max-md:text-3xl">
+            <div className="flex items-center justify-between gap-8 w-[80%] max-md:w-[100%] m-auto max-md:flex-col max-md:justify-center">
+              <h1 className="text-5xl font-black text-white max-md:max-w-full max-md:text-4xl max-md:text-center">
                 <span className="gradient-text">EXPERIENCE</span> THE ERA OF
-                <br />
-                <span className="gradient-text">BLOCKCHAIN</span> GAMBLING
+                <span className="gradient-text"> BLOCKCHAIN</span> GAMBLING
               </h1>
               <button
                 onClick={() => router.push("/")}
@@ -82,7 +81,16 @@ const HeroSection: React.FC = () => {
                 loading="eager"
                 src="/images/hero-avatar.png"
                 alt="Gambling Experience"
-                className="object-contain grow w-full md:w-[90%] max-md:mt-0 max-md:max-w-full"
+                className="object-contain grow w-full md:w-[90%] max-md:mt-0 max-md:max-w-full max-md:hidden"
+                width={600}
+                height={600}
+              />
+              <Image
+                priority
+                loading="eager"
+                src="/images/hero-avatar-mobile.png"
+                alt="Gambling Experience"
+                className="object-contain grow w-full md:w-[90%] max-md:mt-0 max-md:max-w-full hidden max-md:block"
                 width={600}
                 height={600}
               />

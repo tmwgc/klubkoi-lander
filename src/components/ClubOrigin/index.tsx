@@ -48,18 +48,17 @@ const ClubOrigin: React.FC = () => {
             <p className="mb-6">
               Welcome to the new age of digital ownership! Koi is a blockchain enabled destination
               where Players become Bosses. Designed as a one stop shop for wagering enthusiasts,
-              Koi’s casino floor meets skill-based competition, sports betting, and crypto futures
-              trading. By delivering an interactive ecosystem, Koi has reimagined the gambling
-              experience with enticing gameplay, strategic player advantages, and a community owned
-              economy that rewards engagement.
+              Koi&#39;s casino floor meets skill-based competition, sports betting, and crypto
+              futures trading. By delivering an interactive ecosystem, Koi has reimagined the
+              gambling experience with enticing gameplay, strategic player advantages, and a
+              community owned economy that rewards engagement.
             </p>
             <p>
-              Welcome to the new age of digital ownership! Koi is a blockchain enabled destination
-              where Players become Bosses. Designed as a one stop shop for wagering enthusiasts,
-              Koi’s casino floor meets skill-based competition, sports betting, and crypto futures
-              trading. By delivering an interactive ecosystem, Koi has reimagined the gambling
-              experience with enticing gameplay, strategic player advantages, and a community owned
-              economy that rewards engagement.
+              Along your journey in Koi, mechanisms to own and influence the platform are prevalent.
+              Players are encouraged to monetize in-game assets and participate in profit-share
+              staking and governance opportunities. Begin by leveling up PlayerCards, become a High
+              Roller, and compete with the community elites to be a recognized Boss. At Koi, your
+              status matters!
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ export const FAQSection = () => {
               <h1 className="self-stretch my-auto text-6xl font-black leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start font-advent-pro">
                 <span className="gradient-text">FAQ</span>
               </h1>
-              <h2 className="self-stretch my-auto text-4xl font-semibold leading-none text-white tracking-[4.54px] max-md:max-w-full">
+              <h2 className="self-stretch my-auto text-4xl max-md:text-3xl font-semibold leading-none text-white tracking-[4.54px] max-md:tracking-[2px] max-md:max-w-full">
                 Frequently Asked Questions
               </h2>
             </div>

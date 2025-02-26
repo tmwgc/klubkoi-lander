@@ -30,7 +30,7 @@ const footerSections = [
 
 export const FooterLinks: React.FC = () => {
   return (
-    <div className="flex gap-5 md:gap-10 items-start text-sm tracking-wide leading-none text-white mt-5 md:mt-0 w-full md:w-initial justify-evenly md:justify-start max-md:px-2">
+    <div className="flex gap-20 max-md:gap-5 items-start text-sm tracking-wide leading-none text-white mt-5 md:mt-0 w-full md:w-initial justify-evenly md:justify-start max-md:px-2">
       {footerSections.map((section, index) => (
         <div key={index} className="flex flex-col self-stretch">
           <div className="text-base font-bold uppercase tracking-[2.56px]">{section.title}</div>

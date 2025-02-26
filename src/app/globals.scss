@@ -77,6 +77,10 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+
+  @media (max-width: 768px) {
+    background-image: url("../../public/images/hall-mobile.png");
+  }
 }
 
 .hero-bg::before {
