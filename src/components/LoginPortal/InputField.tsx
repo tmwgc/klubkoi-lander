@@ -45,9 +45,11 @@ const InputField: React.FC<InputFieldProps> = ({
           aria-label={showPassword ? "Hide password" : "Show password"}
           className="w-[22px]"
         >
-          <img
+          <Image
             loading="lazy"
             src="/icons/eye.svg"
+            width={22}
+            height={22}
             alt=""
             className="object-contain shrink-0 self-stretch my-auto aspect-square w-[22px]"
           />

@@ -58,7 +58,7 @@ export const SignupForm = () => {
           </p>
         </header>
         <form className="self-center mt-12 max-w-full w-[619px] max-md:mt-10" onSubmit={sendEmail}>
-          <div className="flex gap-2.5 items-center px-5 py-4 w-full rounded-sm bg-neutral-600 bg-opacity-80 min-h-[55px] max-md:max-w-full">
+          <div className="flex gap-2.5 items-center px-5 py-4 w-full rounded-sm bg-[var(--input-bg)] bg-opacity-80 min-h-[55px] max-md:max-w-full">
             <div className="flex items-center justify-center my-auto w-6 aspect-square">
               <svg
                 width="19"
@@ -92,7 +92,7 @@ export const SignupForm = () => {
               required
             />
           </div>
-          <div className="flex gap-2.5 items-center px-5 py-4 mt-6 w-full rounded-sm bg-neutral-600 bg-opacity-80 min-h-[55px] max-md:max-w-full">
+          <div className="flex gap-2.5 items-center px-5 py-4 mt-6 w-full rounded-sm bg-[var(--input-bg)] bg-opacity-80 min-h-[55px] max-md:max-w-full">
             <div className="flex items-center justify-center my-auto w-6 aspect-square">
               <svg
                 width="24"

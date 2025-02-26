@@ -17,7 +17,7 @@ const BlogPostPreview: React.FC<BlogPostPreviewProps> = ({
   tag = "Product",
 }) => {
   return (
-    <article className="flex flex-col self-stretch pb-4 my-auto rounded-none w-full border border-solid border-zinc-800 border-b-0">
+    <article className="flex flex-col self-stretch pb-4 my-auto rounded-none w-full border border-solid border-[var(--divider)] border-b-0">
       <div className="w-full">
         <Image
           loading="lazy"
@@ -65,7 +65,7 @@ const BlogPostPreview: React.FC<BlogPostPreviewProps> = ({
             <time className="self-stretch my-auto">{date}</time>
           </div>
         </div>
-        <div className="h-[1px] w-[calc(100%+40px)] bg-zinc-800 ml-[-20px]" />
+        <div className="h-[1px] w-[calc(100%+40px)] bg-[var(--divider)] ml-[-20px]" />
       </div>
     </article>
   );

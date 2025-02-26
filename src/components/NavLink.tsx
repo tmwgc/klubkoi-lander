@@ -3,12 +3,12 @@ import Link from "next/link";
 
 interface NavLinkProps {
   text: string;
-  link:string
+  link: string;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ text,link }) => {
+const NavLink: React.FC<NavLinkProps> = ({ text, link }) => {
   return (
-    <Link href={link} className="text-sm font-medium text-white text-center">
+    <Link href={link} className="text-sm font-medium text-white text-center text-nowrap">
       {text}
     </Link>
   );

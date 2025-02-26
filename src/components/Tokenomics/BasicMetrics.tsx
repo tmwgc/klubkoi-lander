@@ -40,7 +40,7 @@ const metrics = [
 
 export default function BasicMetrics() {
   return (
-    <section className="self-center mt-24 w-full m-auto max-md:mt-10 max-md:max-w-full">
+    <section className="self-center w-full m-auto max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-20 justify-center max-md:flex-col">
         <div className="ml-5 w-auto max-w-[600px] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
@@ -56,7 +56,7 @@ export default function BasicMetrics() {
               TOKENOMICS
             </h2>
             {/* <div className="flex shrink-0 mt-5 h-px bg-teal-400 w-[51px]" /> */}
-            <p className="mt-6 mb-6 text-sm font-light tracking-wide leading-5 text-slate-300 max-md:mr-2.5 max-md:max-w-full">
+            <p className="mt-6 mb-6 text-sm font-light tracking-wide leading-5 max-md:mr-2.5 max-md:max-w-full">
               KOI is the native coin of the Koiklub platform and is used to secure the network
               through staking, pay for fees, and share rewards amongst the community.
             </p>

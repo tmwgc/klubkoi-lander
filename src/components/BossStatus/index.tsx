@@ -5,7 +5,7 @@ import LevelCard from "./LevelCard";
 const BossStatus = () => {
   return (
     <div>
-      <section className="max-w-[1600px] w-full m-auto max-md:max-w-full py-12 px-5">
+      <section id="gameplay" className="max-w-[1600px] w-full m-auto max-md:max-w-full py-12 px-5">
         <div className="bg-[#0B1541] rounded-lg py-12 px-8 flex gap-10 items-center max-md:max-w-full max-md:flex-col">
           <section className="flex justify-center my-auto w-[45%] max-md:w-full">
             <div className="pl-16 flex gap-8">

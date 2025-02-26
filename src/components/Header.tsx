@@ -69,32 +69,39 @@ const Header: React.FC<{ className?: string }> = ({ className = "header-bg" }) =
           </Link>
         </div>
         <div className="flex gap-8 items-center">
-          <button className="bg-transparent px-4 md:px-10 py-1 flex items-center gap-3 download-btn">
-            <Image
-              src="/icons/download-circle.svg"
-              alt="download whitepaper"
-              width={22}
-              height={22}
-              className="w-[22px] aspect-square max-md:w-[18px]"
-            />
-            <span className="text-left font-medium text-sm">
-              Download
-              <br />
-              Whitepaper
-            </span>
-          </button>
+          <Link
+            href="/pdf/whitepaper.pdf"
+            download="whitepaper.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-transparent px-4 md:px-10 py-1 flex items-center gap-3 download-btn">
+              <Image
+                src="/icons/download-circle.svg"
+                alt="download whitepaper"
+                width={22}
+                height={22}
+                className="w-[22px] aspect-square max-md:w-[18px]"
+              />
+              <span className="text-left font-medium text-sm">
+                Download
+                <br />
+                Whitepaper
+              </span>
+            </button>
+          </Link>
         </div>
-        <div className="flex gap-2 items-center justify-evenly absolute top-[100%] left-10 right-10 -translate-y-1/2 border border-[#7E7070] bg-black-bg rounded-3xl flex md:hidden px-2">
+        <div className="flex gap-2 max-md:gap-1 items-center justify-evenly absolute top-[100%] left-10 right-10 -translate-y-1/2 border border-[#7E7070] bg-black-bg rounded-3xl flex md:hidden px-2">
           {navLinks.map((link, idx) => (
             <Link
               key={idx}
               href={link.link}
-              className="text-sm font-medium text-white text-center p-3"
+              className="text-sm font-medium text-white text-center p-3 text-nowrap"
             >
               {link.name}
             </Link>
           ))}
-          <Image src="/icons/menu.svg" alt="meny" width={24} height={24} />
+          {/* <Image src="/icons/menu.svg" alt="meny" width={24} height={24} /> */}
         </div>
       </div>
     </header>

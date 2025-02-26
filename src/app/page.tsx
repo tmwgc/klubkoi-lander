@@ -20,6 +20,7 @@ import FeaturesSection from "@/components/FeatureSection";
 import LevelUp from "@/components/LevelUp";
 import Leaderboard from "@/components/Leaderboard";
 import BossStatus from "@/components/BossStatus";
+import Roadmap from "@/components/Roadmap";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
       <PurchaseAndStake />
       <NewsHeadlines />
       <TeamSection />
+      <Roadmap />
       <SignupForm />
       <FAQSection />
       <BlogArticles />

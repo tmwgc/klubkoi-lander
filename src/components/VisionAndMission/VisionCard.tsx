@@ -5,13 +5,13 @@ export const VisionCard: React.FC = () => {
   return (
     <article className="relative grow max-md:max-w-full">
       <header className="flex overflow-hidden relative flex-col px-16 pt-8 pb-2 max-w-full w-[431px] max-md:px-5 max-md:pt-24">
-        <Image
+        {/* <Image
           loading="lazy"
           src="/images/spiral.svg"
           className="object-cover absolute inset-0 size-full"
           alt="Vision background"
           fill
-        />
+        /> */}
         <div className="pt-8">
           <Image
             loading="lazy"

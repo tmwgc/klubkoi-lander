@@ -88,7 +88,7 @@ const HeroSection: React.FC = () => {
               />
             </div>
           </div>
-          <div className="max-w-[260px] w-full flex flex-col items-center mt-5 flex md:hidden scroll-absolute">
+          {/* <div className="max-w-[260px] w-full flex flex-col items-center mt-5 flex md:hidden scroll-absolute">
             <p className="uppercase text-xl font-bold mb-2">Scroll down</p>
             <Image
               loading="eager"
@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
               height={32}
               className="w-[40px]"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

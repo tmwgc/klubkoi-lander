@@ -14,10 +14,12 @@
   --primary-gradient: linear-gradient(118.01deg, #eba6ff 7.47%, #60b7ff 62.48%);
 
   --text-primary: white;
-  --text-secondary: #cdcdcd;
+  --text-secondary: #ffffff;
 
   --divider: #091b63;
   --border: #091b63;
+
+  --input-bg: #01114e;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -248,6 +250,7 @@ p {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
+  pointer-events: none;
 }
 
 .feature-bg {
@@ -271,7 +274,7 @@ p {
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #e9fff72b;
+  background-color: #091b632b;
   top: calc(100% + 2.5rem);
   width: 100%;
 }
@@ -280,7 +283,7 @@ p {
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #e9fff72b;
+  background-color: rgba(9, 27, 99, 0.169);
   top: calc(100% + 2.5rem);
   width: 100%;
 }
@@ -289,7 +292,7 @@ p {
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #e9fff72b;
+  background-color: #091b632b;
   top: calc(100% + 2.5rem);
   width: 100%;
   display: none;
@@ -303,7 +306,7 @@ p {
   content: "";
   position: absolute;
   height: 100%;
-  background-color: #e9fff72b;
+  background-color: #091b632b;
   left: calc(100% + 2.5rem);
   width: 2px;
 
@@ -316,7 +319,7 @@ p {
   content: "";
   position: absolute;
   height: 100%;
-  background-color: #e9fff72b;
+  background-color: #091b632b;
   left: calc(100% + 2.5rem);
   width: 2px;
 
@@ -469,6 +472,35 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.vision-bg {
+  background-image: url("../../public/images/wave.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: relative;
+}
+
+.vision-bg::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 40%;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../public/images/wave2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.roadmap-bg {
+  background-image: url("../../public/images/star.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 @media (min-width: 768px) {

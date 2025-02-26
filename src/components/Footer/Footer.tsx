@@ -33,11 +33,11 @@ const Footer: React.FC = () => {
                         loading="lazy"
                         src="/footer-logo.png"
                         alt="KlubKoi logo"
-                        className="object-contain aspect-square w-[auto] h-[106px]"
+                        className="object-contain w-[240px] max-md:w-[130px] h-auto"
                         width={84}
                         height={84}
                       />
-                      <div className="mt-4 max-w-[75%] md:max-w-full">
+                      <div className="mt-8 max-md:mt-4 max-w-[75%] md:max-w-full">
                         KlubKoi.com envisions to be the pioneer of introducing immersive casino
                         experiences to the world.
                       </div>
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
                 </div>
               </div> */}
               <div className="bg-[#6F6F6F7A] h-[1px] mt-6 w-[75%] hidden md:block" />
-              <div className="flex gap-9 mt-5 max-w-full pl-10 copyright w-full py-2 md:py-0">
+              <div className="flex gap-9 mt-5 max-w-full pl-10 max-md:pl-5 max-md:pr-5 copyright w-full py-2 md:py-0">
                 <SocialIcons />
                 <div className="flex-auto text-xs tracking-wider leading-5 text-white">
                   © Copyright 2023, All Rights Reserved by KlubKoi

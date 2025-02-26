@@ -160,7 +160,7 @@ export const FAQSection = () => {
         <div className="flex flex-col items-center self-center w-full m-auto  max-md:max-w-full">
           <header className="flex gap-12 justify-between items-center max-w-full max-md:flex-col max-md:items-start">
             <div className="flex gap-6">
-              <h1 className="self-stretch my-auto text-6xl font-bold leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start font-advent-pro">
+              <h1 className="self-stretch my-auto text-6xl font-black leading-none text-center text-lime-300 tracking-[6.72px] max-md:text-4xl max-md:text-start font-advent-pro">
                 <span className="gradient-text">FAQ</span>
               </h1>
               <h2 className="self-stretch my-auto text-4xl font-semibold leading-none text-white tracking-[4.54px] max-md:max-w-full">
