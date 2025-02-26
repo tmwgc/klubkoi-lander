@@ -2,15 +2,14 @@ import React from "react";
 import ReactMarquee from "react-fast-marquee";
 import Image from "next/image";
 
-
 interface IMarqueeProps {
   items: {
     icon: string;
     text: string;
-}[]
+  }[];
 }
 
-const Marquee:React.FC<IMarqueeProps> = ({items}) => {
+const Marquee: React.FC<IMarqueeProps> = ({ items }) => {
   return (
     <ReactMarquee autoFill>
       {items.map((item, index) => (
