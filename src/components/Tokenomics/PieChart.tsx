@@ -6,19 +6,40 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const data = {
-  //   labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-  datasets: [
-    {
-      label: "# of Sales",
-      data: [73, 9, 9, 9],
-      backgroundColor: ["#F8DEFF", "#EBA6FF", "#7E528B", "#F8DEFF"],
-      borderColor: ["#F8DEFF", "#EBA6FF", "#7E528B", "#F8DEFF"],
-      borderWidth: 1,
-    },
-  ],
-};
-
-export function PieChart() {
-  return <Doughnut data={data} options={{ cutout: "70%" }} />;
+export function PieChart({
+  data,
+}: {
+  data: {
+    tooltip: string;
+    value: number;
+  }[];
+}) {
+  return (
+    <Doughnut
+      data={{
+        datasets: [
+          {
+            label: "# of Sales",
+            data: data.map((d) => d.value),
+            backgroundColor: ["#F8DEFF", "#EBA6FF", "#7E528B", "#F8DEFF"],
+            borderColor: ["#F8DEFF", "#EBA6FF", "#7E528B", "#F8DEFF"],
+            borderWidth: 1,
+          },
+        ],
+      }}
+      options={{
+        cutout: "70%",
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function (context) {
+                // Return the custom tooltip text for this data point
+                return data[context.dataIndex].tooltip;
+              },
+            },
+          },
+        },
+      }}
+    />
+  );
 }

@@ -2,41 +2,7 @@
 
 import React from "react";
 import { PieChart } from "./PieChart";
-
-const metrics = [
-  {
-    name: "Ticker",
-    value: "KOI",
-  },
-  {
-    name: "Type",
-    value: "Utility",
-  },
-  {
-    name: "Circulating supply",
-    value: "--",
-  },
-  {
-    name: "Total supply",
-    value: "100,000,000",
-  },
-  {
-    name: "% Staked",
-    value: "71%",
-  },
-  {
-    name: "# of Wallets",
-    value: "--",
-  },
-  {
-    name: "No burns",
-    value: "--",
-  },
-  {
-    name: "No New Issuance",
-    value: "--",
-  },
-];
+import { tokenomics } from "@/config";
 
 export default function BasicMetrics() {
   return (
@@ -61,7 +27,7 @@ export default function BasicMetrics() {
               through staking, pay for fees, and share rewards amongst the community.
             </p>
             <div className="flex flex-col gap-6">
-              {metrics.map((metric, index) => (
+              {tokenomics.metrics.map((metric, index) => (
                 <div
                   key={index}
                   className="flex justify-between items-center border-b-[1px] border-[#FFFFFF12]"
@@ -83,7 +49,7 @@ export default function BasicMetrics() {
             alt="Basic metrics illustration"
           /> */}
           <div className="chart-bg"></div>
-          <PieChart />
+          <PieChart data={tokenomics.chartData} />
         </div>
       </div>
     </section>

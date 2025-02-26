@@ -163,5 +163,59 @@
     "By participating in Koi, users agree to comply with the platform's Terms of Use. Koi reserves the right to update policies, adjust platform mechanics, and implement security measures to maintain fairness and legal compliance. Continued use of the platform constitutes acknowledgment of these terms.",
 
     "If you have concerns regarding responsible gambling, security, or regulatory compliance, please review our Responsible Gambling Policy, Privacy Policy, and Terms & Conditions for more information."
-  ]
+  ],
+  "tokenomics": {
+    "chartData": [
+      {
+        "tooltip": "Initial Supply",
+        "value": 74
+      },
+      {
+        "tooltip": "Airdrop",
+        "value": 12
+      },
+      {
+        "tooltip": "Reserved",
+        "value": 12
+      },
+      {
+        "tooltip": "Liquidity Pool",
+        "value": 12
+      }
+    ],
+    "metrics": [
+      {
+        "name": "Ticker",
+        "value": "KOI"
+      },
+      {
+        "name": "Type",
+        "value": "Utility"
+      },
+      {
+        "name": "Circulating supply",
+        "value": "--"
+      },
+      {
+        "name": "Total supply",
+        "value": "100,000,000"
+      },
+      {
+        "name": "% Staked",
+        "value": "71%"
+      },
+      {
+        "name": "# of Wallets",
+        "value": "--"
+      },
+      {
+        "name": "No burns",
+        "value": "--"
+      },
+      {
+        "name": "No New Issuance",
+        "value": "--"
+      }
+    ]
+  }
 }
