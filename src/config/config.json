@@ -15,15 +15,15 @@
             "answer": ""
           },
           {
-            "question": "What platforms does Instapay payment gateway support?",
+            "question": "How does Klub Koi’s profit-sharing model work for players and investors?",
             "answer": ""
           },
           {
-            "question": "Does Instapay provide international payments support?",
-            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+            "question": "What are the benefits of leveling up my Player Card (Gold → Atomic → Quantum)?",
+            "answer": ""
           },
           {
-            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "question": "How do I achieve High Roller or Boss Status, and what are the benefits?",
             "answer": ""
           }
         ]
@@ -32,23 +32,19 @@
         "topic": "Transparency & Security",
         "questions": [
           {
-            "question": "What is a Payment Gateway?",
+            "question": "How does Klub Koi ensure fair play and transparency in its games?",
             "answer": ""
           },
           {
-            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "question": "What measures are in place to protect user funds and account security?",
             "answer": ""
           },
           {
-            "question": "What platforms does Instapay payment gateway support?",
+            "question": "How is Klub Koi governed, and do token holders have voting rights?",
             "answer": ""
           },
           {
-            "question": "Does Instapay provide international payments support?",
-            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
-          },
-          {
-            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "question": "Where can I find real-time data on Klub Koi’s financials and revenue distributions?",
             "answer": ""
           }
         ]
@@ -57,23 +53,23 @@
         "topic": "Blockchain & Web3 Integration",
         "questions": [
           {
-            "question": "What is a Payment Gateway?",
+            "question": "What blockchain is Klub Koi built on, and why was it chosen?",
             "answer": ""
           },
           {
-            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "question": "How does the KOI token function within the Klub Koi ecosystem?",
             "answer": ""
           },
           {
-            "question": "What platforms does Instapay payment gateway support?",
+            "question": "What role do gas fees play in Koi’s economy, and how are they allocated?",
             "answer": ""
           },
           {
-            "question": "Does Instapay provide international payments support?",
-            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+            "question": "Can I use my crypto wallet to deposit, withdraw, and stake within Koi?",
+            "answer": ""
           },
           {
-            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "question": "How does Koi’s Liquidity Pool contribute to platform stability and growth?",
             "answer": ""
           }
         ]
@@ -82,23 +78,19 @@
         "topic": "Gameplay & Mechanics",
         "questions": [
           {
-            "question": "What is a Payment Gateway?",
+            "question": "What is the purpose of Cheats, and how do they impact gameplay?",
             "answer": ""
           },
           {
-            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "question": "How does the Koi Leaderboard system work, and how are winners rewarded?",
             "answer": ""
           },
           {
-            "question": "What platforms does Instapay payment gateway support?",
+            "question": "What is the process for acquiring and monetizing Virtual Real Estate within Koi?",
             "answer": ""
           },
           {
-            "question": "Does Instapay provide international payments support?",
-            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
-          },
-          {
-            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "question": "How does the team selection work for hacking the Boss’s Staking Pool?",
             "answer": ""
           }
         ]
@@ -107,23 +99,35 @@
         "topic": "Technical & Legal",
         "questions": [
           {
-            "question": "What is a Payment Gateway?",
+            "question": "Is Koi licensed and compliant with online gambling regulations?",
             "answer": ""
           },
           {
-            "question": "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+            "question": "Are there geographical restrictions on who can participate in Klub Koi?",
             "answer": ""
           },
           {
-            "question": "What platforms does Instapay payment gateway support?",
+            "question": "Are my winnings and rewards automatically distributed on-chain?",
             "answer": ""
           },
           {
-            "question": "Does Instapay provide international payments support?",
-            "answer": "Yes, Instapay provides support for International transactions. We support all major international cards and 92 currencies including USD, EUR, GBP, SGD, AED."
+            "question": "Does Koi implement smart contracts, and how are they audited for security?",
+            "answer": ""
           },
           {
-            "question": "Is there any setup fee or annual maintainance fee that I need to pay regularly?",
+            "question": "What happens in the event of a smart contract failure or security breach?",
+            "answer": ""
+          },
+          {
+            "question": "How are user funds stored, and does Klub Koi use multi-signature wallets for protection?",
+            "answer": ""
+          },
+          {
+            "question": "Can players remain anonymous while using Klub Koi, or is KYC verification required?",
+            "answer": ""
+          },
+          {
+            "question": "Does Klub Koi provide player support for disputes, responsible gaming, or legal inquiries?",
             "answer": ""
           }
         ]
@@ -132,19 +136,22 @@
   },
   "blogs": [
     {
-      "imageSrc": "/blogs/casino.png",
-      "date": "Janusary 2, 2023",
-      "title": "Bitlocus recap january 2023"
+      "imageSrc": "/blogs/blog1.png",
+      "date": "Januaary 2, 2025",
+      "title": "Special Tournaments with 1M Prize Pool this New Year",
+      "tag": "Product"
     },
     {
-      "imageSrc": "/blogs/casino.png",
-      "date": "Janusary 2, 2023",
-      "title": "Bitlocus recap january 2023"
+      "imageSrc": "/blogs/blog2.png",
+      "date": "February 15, 2025",
+      "title": "Unlock full customizations and style your avatars without NFT’s",
+      "tag": "Product"
     },
     {
-      "imageSrc": "/blogs/casino.png",
-      "date": "Janusary 2, 2023",
-      "title": "Bitlocus recap january 2023"
+      "imageSrc": "/blogs/blog3.png",
+      "date": "March 18, 2025",
+      "title": "Koi introducing the all new daring virtual Russian Roulette feature",
+      "tag": "New Feature"
     }
   ],
   "disclaimer": [

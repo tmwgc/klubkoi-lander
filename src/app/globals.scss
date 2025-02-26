@@ -228,7 +228,8 @@ p {
   padding: 50px 20px 40px;
 
   @media (max-width: 600px) {
-    padding: 30px 20px;
+    padding: 30px 10px;
+    width: 90% !important;
   }
 }
 
@@ -254,6 +255,13 @@ p {
   background-repeat: no-repeat;
   z-index: 1;
   pointer-events: none;
+
+  @media (max-width: 768px) {
+    top: -20px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
 }
 
 .feature-bg {
@@ -379,6 +387,10 @@ p {
   background-image: url("../../public/images/blur-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    background-image: url("../../public/images/blur-bg-mobile.png");
+  }
 }
 
 .header-bg-2 {

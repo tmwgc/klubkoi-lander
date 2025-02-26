@@ -1,8 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 
 interface InputFieldProps {
-  type: "email" | "password";
+  type: "email" | "password" | "text";
   placeholder: string;
   iconSrc: string;
   ariaLabel: string;

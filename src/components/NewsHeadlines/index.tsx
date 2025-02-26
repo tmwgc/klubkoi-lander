@@ -54,7 +54,7 @@ export const NewsHeadlines = () => {
         </div>
         <div className="grid grid-cols-4 max-md:grid-cols-2">
           {newsLogos.map((logo, index) => (
-            <div key={index} className="flex flex-col items-center px-12 py-20 news-card">
+            <div key={index} className="flex flex-col items-center px-12 py-20 news-card max-md:px-3 max-md:py-10">
               <Image
                 loading="lazy"
                 src={logo.src}
