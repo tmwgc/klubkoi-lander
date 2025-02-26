@@ -5,7 +5,7 @@ import VideoSwiper from "./VideoSwiper";
 
 const TrailerSneakpeaks: React.FC = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full">
       <div className=" w-full pt-20 pb-20">
         <div className="flex flex-col w-full text-center mb-20 max-md:mt-10 px-5 max-md:max-w-full">
           <h2 className="text-5xl font-black leading-10 text-white max-md:max-w-full max-md:text-3xl">

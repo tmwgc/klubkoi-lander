@@ -17,6 +17,7 @@
   --text-secondary: #cdcdcd;
 
   --divider: #091b63;
+  --border: #091b63;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -328,7 +329,7 @@ p {
 .news-card:nth-child(2),
 .news-card:nth-child(3),
 .news-card:nth-child(4) {
-  border-bottom: 1px solid #575757;
+  border-bottom: 1px solid var(--border);
 
   @media (max-width: 768px) {
     border-bottom: none;
@@ -341,7 +342,7 @@ p {
 .news-card:nth-child(5),
 .news-card:nth-child(6),
 .news-card:nth-child(7) {
-  border-right: 1px solid #575757;
+  border-right: 1px solid var(--border);
 
   @media (max-width: 768px) {
     border-right: none;
@@ -355,7 +356,7 @@ p {
 .news-card:nth-child(5),
 .news-card:nth-child(6) {
   @media (max-width: 768px) {
-    border-bottom: 1px solid #575757;
+    border-bottom: 1px solid var(--border);
   }
 }
 
@@ -364,7 +365,7 @@ p {
 .news-card:nth-child(5),
 .news-card:nth-child(7) {
   @media (max-width: 768px) {
-    border-right: 1px solid #575757;
+    border-right: 1px solid var(--border);
   }
 }
 
@@ -409,6 +410,65 @@ p {
   // z-index: 1;
   width: 70%;
   height: 70%;
+}
+
+.faq-active {
+  position: relative;
+}
+
+.faq-active::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(118.01deg, #eba6ff 7.47%, #60b7ff 62.48%);
+}
+
+.levelup-bg {
+  background-image: url("../../public/images/levelup-bg1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+
+.levelup-bg:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../public/images/levelup-bg2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  z-index: -1;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.leaderboard-bg {
+  background-image: url("../../public/images/leaderboard-bg.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.leaderboard-bg-1 {
+  background-image: url("../../public/images/leaderboard1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.leaderboard-bg-2 {
+  background-image: url("../../public/images/leaderboard2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 @media (min-width: 768px) {

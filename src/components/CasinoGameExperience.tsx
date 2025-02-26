@@ -18,7 +18,7 @@ const gameCards = [
 
 export const CasinoGamesExperience: React.FC = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full px-5">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full px-5">
       <div className="flex flex-wrap gap-9 self-center mt-10 mb-10 w-full">
         <h2 className="flex-auto text-3xl font-black tracking-tighter leading-8 text-white w-[310px]">
           EXPERIENCE <span className="gradient-text">CASINO GAMES</span> IN A NEW MODE

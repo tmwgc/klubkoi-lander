@@ -39,7 +39,7 @@ export const SignupForm = () => {
     >
       <Image
         loading="lazy"
-        src="/images/signup-bg.svg"
+        src="/images/star.png"
         className="object-cover absolute inset-0 size-full"
         alt="Background"
         fill

@@ -5,7 +5,7 @@ import React from "react";
 
 const AlliancesSection = () => {
   return (
-    <section className="relative mt-12 max-md:mt-10 max-md:mr-0 max-w-[1400px] w-full m-auto max-md:max-w-full">
+    <section className="relative mt-12 max-md:mt-10 max-md:mr-0 max-w-[1600px] w-full m-auto max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col border-b-[1px] border-[var(--divider)]">
         <div className="w-[58%] relative max-md:ml-0 max-md:w-full">
           <Image

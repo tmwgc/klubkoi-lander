@@ -4,7 +4,7 @@ import TeamMember from "./TeamMember";
 export const teamMembers = [
   {
     imageSrc: "/teams/member1.png",
-    name: "Mstt",
+    name: "Matt",
     role: "Project Founder",
   },
   {
@@ -26,7 +26,7 @@ export const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full">
       <div className="flex flex-col">
         <div className="w-[85%] bg-[var(--divider)] h-[1px]"></div>
         <div className="flex flex-col items-start px-5 w-full max-md:pr-5 max-md:max-w-full">
@@ -74,7 +74,7 @@ const TeamSection = () => {
             <TeamMember key={index} {...member} />
           ))}
         </div>
-        <div className="w-full bg-[var(--divider)] h-[1px]"></div>
+        {/* <div className="w-full bg-[var(--divider)] h-[1px]"></div> */}
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ const featuresData = [
 
 export const FeaturesSection = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full pt-12">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full pt-12">
       <div className="flex flex-col items-center px-5 feature-bg">
         <header className="max-w-full text-center w-[924px]">
           <h1 className="text-5xl font-black uppercase max-md:max-w-full max-md:text-4xl">

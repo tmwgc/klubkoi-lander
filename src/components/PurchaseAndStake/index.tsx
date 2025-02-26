@@ -11,7 +11,7 @@ const items = [
 
 export const PurchaseAndStake: React.FC = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full px-10">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full px-10">
       <div className="px-10 max-md:px-0">
         <div className="px-16 py-16 w-full gradient-bg max-md:px-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">

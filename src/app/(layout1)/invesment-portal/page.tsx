@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <div>
       <section className="section-blur-bg">
-        <section className="max-w-[1400px] w-full m-auto max-md:max-w-full px-20 max-md:px-5">
+        <section className="max-w-[1600px] w-full m-auto max-md:max-w-full px-20 max-md:px-5">
           <div className="flex flex-col gap-5 pb-10">
             <div className="grid grid-cols-[auto_400px] max-md:grid-cols-1 max-md:place-items-center max-md:gap-12 gap-4 py-10 pb-15">
               <InvestmentPromotion />

@@ -11,7 +11,6 @@ const marqueeItems = [
   { icon: "/icons/star.svg", text: "COMMUNITY OWNED" },
 ];
 
-
 const Footer: React.FC = () => {
   return (
     <footer>
@@ -23,7 +22,7 @@ const Footer: React.FC = () => {
         <div className="marquee footer-gradient-bg py-2 md:py-3">
           <Marquee items={marqueeItems} />
         </div>
-        <div className="max-w-[1400px] w-full px-0 md:px-10 m-auto max-md:max-w-full">
+        <div className="max-w-[1600px] w-full px-0 md:px-10 m-auto max-md:max-w-full">
           <div className="flex gap-5 justify-between self-center mt-6 w-full pb-0 md:pb-8">
             <div className="flex flex-col items-start w-full md:w-[initial] max-md:max-w-full">
               <div className="self-center w-full max-w-full pl-5 px-5 md:px-0 md:pl-10">

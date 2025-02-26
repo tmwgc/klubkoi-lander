@@ -3,7 +3,7 @@ import React from "react";
 
 const ClubOrigin: React.FC = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full">
       <div className="flex relative flex-col grow shrink-0 items-center px-20 pl-[calc(theme(spacing.20)+40px)] pt-36 pb-20 basis-0 w-full max-md:px-5 max-md:pt-24 max-md:max-w-full">
         <Image
           loading="lazy"

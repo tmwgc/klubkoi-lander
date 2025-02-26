@@ -16,7 +16,7 @@ const Header: React.FC<{ className?: string }> = ({ className = "header-bg" }) =
     <header
       className={`flex justify-between items-center w-full relative px-5 py-9 pb-7 md:py-12 md:pb-3 md:px-20 bg-black-bg md:bg-transparent relative mb-5 md:mb-0 ${className}`}
     >
-      <div className="max-w-[1400px] m-auto flex justify-between items-center w-full">
+      <div className="max-w-[1600px] m-auto flex justify-between items-center w-full">
         <div className="flex items-center logo hidden md:flex">
           <Link href="/">
             <Image

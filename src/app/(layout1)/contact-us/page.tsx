@@ -3,7 +3,7 @@ import LoginPortal from "@/components/LoginPortal";
 
 const Page = () => {
   return (
-    <section className="max-w-[1400px] w-full m-auto max-md:max-w-full px-20 max-md:px-5">
+    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full px-20 max-md:px-5">
       <div className="flex flex-col py-20 pb-24">
         <div className="flex flex-col items-center">
           <h1 className="text-4xl font-bold tracking-wide leading-10 text-white mb-8 uppercase">
