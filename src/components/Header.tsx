@@ -27,7 +27,7 @@ const Header: React.FC<{ className?: string }> = ({ className = "header-bg" }) =
               width={155}
               height={55}
               objectFit={"contain"}
-              className="h-[58px] w-auto"
+              className="h-[75px] w-auto"
             />
           </Link>
         </div>
