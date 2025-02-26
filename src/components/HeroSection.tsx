@@ -76,7 +76,7 @@ const HeroSection: React.FC = () => {
                 LAUNCH CASINO
               </button>
             </div>
-            <div className="w-[80%] m-auto">
+            <div className="max-w-[80%] w-full max-md:max-w-[100%] m-auto">
               <Image
                 priority
                 loading="eager"
