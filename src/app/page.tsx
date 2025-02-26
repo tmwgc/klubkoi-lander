@@ -17,6 +17,8 @@ import Tokenomics from "@/components/Tokenomics";
 import TrailerSneakpeaks from "@/components/TrailerSneakPeaks";
 import VisionAndMission from "@/components/VisionAndMission";
 import FeaturesSection from "@/components/FeatureSection";
+import LevelUp from "@/components/LevelUp";
+import Leaderboard from "@/components/Leaderboard";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
       <HeroSection />
       <ClubOrigin />
       <TrailerSneakpeaks />
+      <LevelUp />
+      <Leaderboard />
       {/*       <CasinoGamesExperience />
       <RandomChatsSection />
       <AlliancesSection /> */}

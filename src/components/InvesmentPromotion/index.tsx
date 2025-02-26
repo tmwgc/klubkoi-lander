@@ -21,7 +21,7 @@ const InvestmentPromotion = () => {
               Invest with us in
             </div>
             <div className="mt-1 text-4xl max-md:text-3xl font-bold leading-8 tracking-[4.56px]">
-              <span className="gradient-text font-advent-pro">FUTURE OF VIRTUAL CASINOS</span>
+              <span className="gradient-text">FUTURE OF VIRTUAL CASINOS</span>
             </div>
           </div>
         </div>

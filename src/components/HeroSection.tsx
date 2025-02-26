@@ -71,7 +71,7 @@ const HeroSection: React.FC = () => {
               </h1>
               <button
                 onClick={() => router.push("/")}
-                className="px-6 py-2 max-w-[260px] w-full uppercase text-md font-bold font-advent-pro primary-btn"
+                className="px-6 py-2 max-w-[260px] w-full uppercase text-md font-bold primary-btn"
               >
                 LAUNCH CASINO
               </button>
@@ -89,7 +89,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
           <div className="max-w-[260px] w-full flex flex-col items-center mt-5 flex md:hidden scroll-absolute">
-            <p className="font-advent-pro uppercase text-xl font-bold mb-2">Scroll down</p>
+            <p className="uppercase text-xl font-bold mb-2">Scroll down</p>
             <Image
               loading="eager"
               src="/icons/scroll-down.png"

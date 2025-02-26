@@ -15,6 +15,8 @@
 
   --text-primary: white;
   --text-secondary: #cdcdcd;
+
+  --divider: #091b63;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -45,9 +47,9 @@ body {
   font-family: var(--font-albert-sans);
 }
 
-.font-advent-pro {
-  font-family: var(--font-advent-pro);
-}
+// .font-advent-pro {
+//   font-family: var(--font-advent-pro);
+// }
 
 p {
   color: var(--text-secondary);

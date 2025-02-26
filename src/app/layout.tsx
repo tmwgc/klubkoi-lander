@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Advent_Pro, Albert_Sans } from "next/font/google";
+import { Albert_Sans } from "next/font/google";
 import "./globals.scss";
 
-const adventPro = Advent_Pro({
-  variable: "--font-advent-pro",
-  subsets: ["latin"],
-});
+// const adventPro = Advent_Pro({
+//   variable: "--font-advent-pro",
+//   subsets: ["latin"],
+// });
 
 const albertSans = Albert_Sans({
   variable: "--font-albert-sans",
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${adventPro.variable} ${albertSans.variable} antialiased`}>{children}</body>
+      <body className={`${albertSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }

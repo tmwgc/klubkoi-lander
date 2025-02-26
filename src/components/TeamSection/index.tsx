@@ -28,7 +28,7 @@ const TeamSection = () => {
   return (
     <section className="max-w-[1400px] w-full m-auto max-md:max-w-full">
       <div className="flex flex-col">
-        <div className="w-[85%] bg-[#575757] h-[1px]"></div>
+        <div className="w-[85%] bg-[var(--divider)] h-[1px]"></div>
         <div className="flex flex-col items-start px-5 w-full max-md:pr-5 max-md:max-w-full">
           <div className="py-16 w-full max-md:max-w-full relative">
             <div className="flex items-center gap-5 max-md:flex-col">
@@ -68,13 +68,13 @@ const TeamSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-[#575757] h-[1px]"></div>
+        <div className="w-full bg-[var(--divider)] h-[1px]"></div>
         <div className="grid grid-cols-4 gap-2 items-center py-16 max-md:grid-cols-2 max-md:gap-5 max-md:px-5">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}
         </div>
-        <div className="w-full bg-[#575757] h-[1px]"></div>
+        <div className="w-full bg-[var(--divider)] h-[1px]"></div>
       </div>
     </section>
   );

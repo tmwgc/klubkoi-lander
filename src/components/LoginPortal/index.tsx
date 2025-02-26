@@ -21,7 +21,7 @@ const LoginPortal: React.FC<LoginPortalProps> = ({ className, title, subtitle, d
             <div className="text-2xl leading-none text-lime-300 tracking-[5.76px] uppercase">
               {title}
             </div>
-            <div className="mt-2.5 text-3xl font-bold leading-none text-white tracking-[3.84px] uppercase font-advent-pro">
+            <div className="mt-2.5 text-3xl font-bold leading-none text-white tracking-[3.84px] uppercase">
               {subtitle}
             </div>
           </div>
