@@ -39,7 +39,7 @@ export default function BasicMetrics() {
             </div>
           </div>
         </div>
-        <div className="max-w-[412px] relative w-[100%] my-auto max-md:ml-0 max-md:w-full">
+        <div className="max-w-[412px] max-md:m-auto relative w-[100%] my-auto max-md:w-full">
           {/* <Image
             loading="lazy"
             src="/images/metrics.svg"
