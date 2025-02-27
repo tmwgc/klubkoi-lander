@@ -216,7 +216,7 @@ p {
   width: 100%;
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
   width: 60% !important;
   height: 200px;
   color: white;
@@ -233,17 +233,17 @@ p {
   }
 }
 
-.swiper-slide-active {
+.mySwiper .swiper-slide-active {
   /* background-image: url("../../public/images/sneak-bg.png"); */
   transform: scale(1.1);
 }
 
-.swiper-slide-active > div {
+.mySwiper .swiper-slide-active > div {
   position: relative;
   /* padding: 40px 30px 30px; */
 }
 
-.swiper-slide-active > div::after {
+.mySwiper .swiper-slide-active > div::after {
   content: "";
   position: absolute;
   top: -50px;

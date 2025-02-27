@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -35,15 +34,15 @@ export const SignupForm = () => {
   return (
     <section
       id="early-access"
-      className="flex relative flex-col items-center px-20 pt-14 pb-24 mt-4 w-full min-h-[593px] max-md:px-5 max-md:max-w-full"
+      className="roadmap-bg flex relative flex-col items-center px-20 pt-14 pb-24 mt-4 w-full min-h-[593px] max-md:px-5 max-md:max-w-full"
     >
-      <Image
+      {/* <Image
         loading="lazy"
         src="/images/star.png"
         className="object-cover absolute inset-0 size-full"
         alt="Background"
         fill
-      />
+      /> */}
       <div className="flex relative flex-col max-w-full border-b border-black w-[693px]">
         <header className="flex flex-col w-full text-center text-gray-100 max-md:max-w-full">
           <h1 className="text-5xl font-bold leading-10 bg-clip-text max-md:max-w-full max-md:text-4xl">

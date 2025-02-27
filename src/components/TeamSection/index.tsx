@@ -1,4 +1,8 @@
+"use client";
+
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import TeamMember from "./TeamMember";
 
 export const teamMembers = [
@@ -26,7 +30,7 @@ export const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="max-w-[1600px] w-full m-auto max-md:max-w-full">
+    <section className="max-w-[1600px] w-full m-auto py-10 max-md:max-w-full">
       <div className="flex flex-col">
         <div className="w-[85%] bg-[var(--divider)] h-[1px]"></div>
         <div className="flex flex-col items-start px-5 w-full max-md:pr-5 max-md:max-w-full">
@@ -69,10 +73,26 @@ const TeamSection = () => {
           </div>
         </div>
         <div className="w-full bg-[var(--divider)] h-[1px]"></div>
-        <div className="grid grid-cols-4 gap-2 items-center py-16 max-md:grid-cols-2 max-md:gap-5 max-md:px-5">
+        <div className="grid grid-cols-4 gap-2 items-center py-16 max-md:hidden max-md:px-5">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}
+        </div>
+        {/* For mobile screens, render Swiper; for larger screens, render grid */}
+        <div className="hidden max-md:block py-5 px-10">
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            navigation
+            className="team-swiper"
+          >
+            {teamMembers.map((member, index) => (
+              <SwiperSlide key={index}>
+                <TeamMember {...member} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
         {/* <div className="w-full bg-[var(--divider)] h-[1px]"></div> */}
       </div>

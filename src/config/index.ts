@@ -1,5 +1,5 @@
 import config from "./config.json";
 
-const { faq, blogs, disclaimer, tokenomics } = config;
+const { faq, blogs, disclaimer, tokenomics ,headlinesLogo} = config;
 
-export { faq, blogs, disclaimer, tokenomics };
+export { faq, blogs, disclaimer, tokenomics ,headlinesLogo};

@@ -11,7 +11,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ imageSrc, name, role }) => {
   return (
     <div className="flex overflow-hidden flex-col text-white">
       <div className="flex flex-col justify-center py-px w-full bg-blend-color">
-        <div className="flex relative flex-col justify-end pb-16 w-full aspect-[0.618]">
+        <div className="flex relative flex-col justify-end pb-16 w-full aspect-[0.618] max-md:aspect-[0.8]">
           <div className="absolute bottom-[15%] inset-0 -z-1">
             <Image
               loading="lazy"

@@ -8,11 +8,11 @@
         "questions": [
           {
             "question": "How does Klub Koi integrate gameplay with traditional gambling?",
-            "answer": ""
+            "answer": "How does Klub Koi integrate gameplay with traditional gambling"
           },
           {
             "question": "What types of games and wagering options are available on Klub Koi?",
-            "answer": ""
+            "answer": "What types of games and wagering options are available on Klub Koi"
           },
           {
             "question": "How does Klub Koi’s profit-sharing model work for players and investors?",
@@ -224,5 +224,39 @@
         "value": "--"
       }
     ]
-  }
+  },
+  "headlinesLogo":[
+    {
+      "src": "/news/news1.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/coingecko.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/bloomberg.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/cointelegraph.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/bitcoin.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/block.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/decrypt.svg",
+      "alt": "News logo 1"
+    },
+    {
+      "src": "/news/techinasia.png",
+      "alt": "News logo 1"
+    }
+  ]
 }

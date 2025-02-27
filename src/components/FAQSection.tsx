@@ -1,7 +1,76 @@
 "use client";
 
+import React, { useEffect, useRef, useState } from "react";
 import { faq } from "@/config";
-import React, { useState } from "react";
+import autoAnimate from "@formkit/auto-animate";
+
+const FaqQuestion = ({
+  question,
+  answer,
+  selectedQuestion,
+  setSelectedQuestion,
+}: {
+  question: string;
+  answer: string;
+  selectedQuestion: string;
+  setSelectedQuestion: React.Dispatch<React.SetStateAction<string>>;
+}) => {
+  const parent = useRef(null);
+
+  useEffect(() => {
+    if (parent.current) {
+      autoAnimate(parent.current);
+    }
+  }, [parent]);
+
+  return (
+    <div ref={parent}>
+      <button
+        onClick={() => setSelectedQuestion(question)}
+        className={`flex flex-col justify-center w-full py-5 pr-3 pl-3.5 leading-none ${
+          selectedQuestion === question ? "bg-[#020A2C] text-white font-medium" : "bg-[#0B1437]"
+        } shadow-sm border-neutral-700`}
+      >
+        <div className="flex gap-5 justify-between items-center max-md:max-w-full">
+          <div className="flex gap-3.5 items-start self-stretch my-auto min-w-60 max-md:max-w-full">
+            <div className="flex shrink-0 bg-[#F8DEFF] rounded-full h-[19px] w-[19px]" />
+            <p className="text-start">{question}</p>
+          </div>
+          <div
+            className={`w-[20px] h-[20px] ${
+              selectedQuestion === question
+                ? "transition-all max-md:transform max-md:rotate-90"
+                : ""
+            }`}
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.08789 3.35254L13.3917 9.65634L7.08789 15.9601"
+                stroke="#F8DEFF"
+                strokeWidth="1.57595"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+      {question === selectedQuestion && (
+        <div
+          className={`hidden max-md:block bg-[#020A2C] border-t-[1px] border-[var(--divider)] transition-all duration-500`}
+        >
+          <p className="p-4 text-base font-medium leading-5">{answer}</p>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export const FAQSection = () => {
   const [selectedTopic, setSelectedTopic] = useState(faq.topics[0]);
@@ -53,47 +122,20 @@ export const FAQSection = () => {
             <div className="w-[calc(50%+70px)] relative z-10 max-md:ml-0 max-md:w-full">
               <nav className="z-10 mt-6 mr-0 text-base leading-5 text-neutral-400 max-md:max-w-full rounded-xl overflow-hidden">
                 {selectedTopic.questions.map((faq, index) => (
-                  <button
+                  <FaqQuestion
                     key={index}
-                    onClick={() => setSelectedQuestion(faq.question)}
-                    className={`flex flex-col justify-center w-full py-5 pr-3 pl-3.5 leading-none ${
-                      selectedQuestion === faq.question
-                        ? "bg-[#020A2C] text-white font-medium"
-                        : "bg-[#0B1437]"
-                    } shadow-sm border-neutral-700 ${index === 0 ? "" : ""}`}
-                  >
-                    <div className="flex gap-5 justify-between items-center max-md:max-w-full">
-                      <div className="flex gap-3.5 items-start self-stretch my-auto min-w-60 max-md:max-w-full">
-                        <div className="flex shrink-0 bg-[#F8DEFF] rounded-full h-[19px] w-[19px]" />
-                        <p className="text-start">{faq.question}</p>
-                      </div>
-                      <div className="w-[20px] h-[20px]">
-                        <svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.08789 3.35254L13.3917 9.65634L7.08789 15.9601"
-                            stroke="#F8DEFF"
-                            strokeWidth="1.57595"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
+                    {...faq}
+                    selectedQuestion={selectedQuestion}
+                    setSelectedQuestion={setSelectedQuestion}
+                  />
                 ))}
               </nav>
             </div>
-            <article className="w-[calc(50%+70px)] ml-[-70px] relative -z-1 max-md:ml-0 max-md:w-full bg-[#020A2C] border border-solid border-zinc-800 rounded-xl">
+            <article className="w-[calc(50%+70px)] ml-[-70px] relative -z-1 max-md:ml-0 max-md:w-full bg-[#020A2C] border border-solid border-zinc-800 rounded-xl max-md:hidden">
               <div className="flex flex-col grow items-end px-[calc(theme(spacing.20)+35px)] pt-8 pb-2.5 w-full shadow-sm max-md:px-5 max-md:max-w-full">
                 <div className="max-w-full w-[372px]">
                   <h3 className="text-lg font-semibold leading-6 text-white">{selectedQuestion}</h3>
-                  <p className="mt-8 text-base font-medium leading-5 text-zinc-400">
+                  <p className="mt-8 text-base font-medium leading-5">
                     {
                       selectedTopic.questions.find((faq) => faq.question === selectedQuestion)
                         ?.answer
