@@ -225,7 +225,7 @@
       }
     ]
   },
-  "headlinesLogo":[
+  "headlinesLogo": [
     {
       "src": "/news/news1.svg",
       "alt": "News logo 1"
@@ -257,6 +257,108 @@
     {
       "src": "/news/techinasia.png",
       "alt": "News logo 1"
+    }
+  ],
+  "roadmap": [
+    {
+      "heading": "Q1",
+      "quarter": "Q1 2025",
+      "title": "Laying the Foundation",
+      "description": "The development team is fully focused on integrating immersive gambling applications into Koi's 3D virtual world, ensuring seamless interaction between gameplay and wagering.",
+      "milestones": [
+        {
+          "text": "Preparing the smart contract and KOI token for launch",
+          "completed": true
+        },
+        {
+          "text": "Building client dashboards for player management and tracking",
+          "completed": true
+        },
+        {
+          "text": "Integrating staking pools for profit-sharing and rewards",
+          "completed": true
+        },
+        {
+          "text": "Implementing mechanisms for jackpot distributions",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "heading": "Q2",
+      "quarter": "Q2 2025",
+      "title": "Expanding the Experience",
+      "description": "With the core infrastructure in place, Koi expands its world and interactive elements, bringing greater personalization and engagement.",
+      "milestones": [
+        {
+          "text": "Integrating avatar customization and enhanced accessory features",
+          "completed": true
+        },
+        {
+          "text": "Expanding the 3D floor plan of Klub Koi's virtual world",
+          "completed": true
+        },
+        {
+          "text": "Delivering in-game assets, including Cheats and Access Cards",
+          "completed": true
+        },
+        {
+          "text": "Initiating airdrop rewards for early adopters and loyal players",
+          "completed": true
+        },
+        {
+          "text": "Kicking off marketing campaigns to grow awareness and adoption",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "heading": "Q3",
+      "quarter": "Q3 2025",
+      "title": "Elevating Gameplay & Strategy",
+      "description": "As engagement increases, Koi introduces advanced mechanics and new ways to play and profit.",
+      "milestones": [
+        {
+          "text": "Enhancing gameplay mechanics for a more immersive experience",
+          "completed": true
+        },
+        {
+          "text": "Opening access to the Korporate Floor, integrating live futures trading",
+          "completed": true
+        },
+        {
+          "text": "Introducing PvP combat functionality and \"Hot Zones\" for risk-based battles",
+          "completed": true
+        },
+        {
+          "text": "Rolling out Team gameplay features and cooperative objectives",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "heading": "Q4",
+      "quarter": "Q4 2025",
+      "title": "Optimization & Mass Adoption",
+      "description": "The final quarter of the year focuses on gameplay refinement and global expansion, ensuring Koi is positioned as a leading wagering platform.",
+      "milestones": [
+        {
+          "text": "Optimizing gameplay physics for enhanced realism",
+          "completed": true
+        },
+        {
+          "text": "Expanding player interactions and social features",
+          "completed": true
+        },
+        {
+          "text": "Introducing new casino games to diversify wagering options",
+          "completed": true
+        },
+        {
+          "text": "Scaling marketing efforts, reaching top-tier platforms and influencers",
+          "completed": true
+        }
+      ]
     }
   ]
 }

@@ -529,6 +529,46 @@ p {
   position: relative;
 }
 
+.roadmap-gradient {
+  background: var(--primary-gradient);
+}
+
+.ellipse {
+  position: relative;
+}
+
+.ellipse::before {
+  content: "";
+  position: absolute;
+  top: -27px;
+  left: -10px;
+  background-image: url("../../public/icons/ellipse.svg");
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+
+  @media (max-width: 768px) {
+    top: -30px;
+    left: -32px;
+  }
+}
+
+#roadmap {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px; /* For horizontal scrollbars */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary); /* Vertical gradient */
+    border-radius: 5px;
+  }
+}
+
 @media (min-width: 768px) {
   .copyright {
     background: transparent;
