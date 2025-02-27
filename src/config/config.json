@@ -360,5 +360,27 @@
         }
       ]
     }
+  ],
+  "teams":[
+    {
+      "imageSrc": "/teams/member1.png",
+      "name": "Matt",
+      "role": "Project Founder"
+    },
+    {
+      "imageSrc": "/teams/member2.png",
+      "name": "Sam",
+      "role": "Chief Technical Officer"
+    },
+    {
+      "imageSrc": "/teams/member3.png",
+      "name": "Bobby",
+      "role": "Chief Financial Officer"
+    },
+    {
+      "imageSrc": "/teams/member4.png",
+      "name": "Hannah",
+      "role": "Chief Marketing Officer"
+    }
   ]
 }

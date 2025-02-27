@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { faq } from "@/config";
 import autoAnimate from "@formkit/auto-animate";
+import CustomFaqDropdown from "./FaqDropdown";
 
 const FaqQuestion = ({
   question,
@@ -33,7 +34,7 @@ const FaqQuestion = ({
       >
         <div className="flex gap-5 justify-between items-center max-md:max-w-full">
           <div className="flex gap-3.5 items-start self-stretch my-auto min-w-60 max-md:max-w-full">
-            <div className="flex shrink-0 bg-[#F8DEFF] rounded-full h-[19px] w-[19px]" />
+            <div className="flex shrink-0 bg-[var(--text-variant-1)] rounded-full h-[19px] w-[19px]" />
             <p className="text-start">{question}</p>
           </div>
           <div
@@ -65,7 +66,7 @@ const FaqQuestion = ({
         <div
           className={`hidden max-md:block bg-[#020A2C] border-t-[1px] border-[var(--divider)] transition-all duration-500`}
         >
-          <p className="p-4 text-base font-medium leading-5">{answer}</p>
+          <p className="py-4 px-8 text-base font-medium leading-5">{answer}</p>
         </div>
       )}
     </div>
@@ -99,7 +100,7 @@ export const FAQSection = () => {
         </div>
       </div>
       <div className="max-w-[1600px] w-full py-0 px-0 max-md:px-5 md:px-10 m-auto max-md:max-w-full">
-        <div className="flex overflow-x-auto gap-5">
+        <div className="flex overflow-x-auto gap-5 max-md:hidden">
           {faq.topics.map((faq, index) => (
             <button
               key={index}
@@ -115,12 +116,20 @@ export const FAQSection = () => {
             </button>
           ))}
         </div>
+        <div className="hidden py-5 max-md:block">
+          <CustomFaqDropdown
+            faq={faq}
+            selectedTopic={selectedTopic}
+            setSelectedTopic={setSelectedTopic}
+            setSelectedQuestion={setSelectedQuestion}
+          />
+        </div>
       </div>
       <div className="bg-[#131D43] border-b-[1px] border-t-[1px] border-[#091B63]">
-        <div className="max-w-[1600px] pt-8 pb-16 px-12 w-full m-auto rounded-none max-md:mt-10">
+        <div className="max-w-[1600px] pt-8 pb-16 px-12 max-md:pb-8 w-full m-auto rounded-none">
           <div className="flex max-md:flex-col">
             <div className="w-[calc(50%+70px)] relative z-10 max-md:ml-0 max-md:w-full">
-              <nav className="z-10 mt-6 mr-0 text-base leading-5 text-neutral-400 max-md:max-w-full rounded-xl overflow-hidden">
+              <nav className="z-10 mt-6 mr-0 max-md:mt-0 text-base leading-5 text-neutral-400 max-md:max-w-full rounded-xl overflow-hidden">
                 {selectedTopic.questions.map((faq, index) => (
                   <FaqQuestion
                     key={index}

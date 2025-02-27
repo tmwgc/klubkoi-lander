@@ -2,31 +2,13 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import TeamMember from "./TeamMember";
-
-export const teamMembers = [
-  {
-    imageSrc: "/teams/member1.png",
-    name: "Matt",
-    role: "Project Founder",
-  },
-  {
-    imageSrc: "/teams/member2.png",
-    name: "Sam",
-    role: "Chief Technical Officer",
-  },
-  {
-    imageSrc: "/teams/member3.png",
-    name: "Bobby",
-    role: "Chief Financial Officer",
-  },
-  {
-    imageSrc: "/teams/member4.png",
-    name: "Hannah",
-    role: "Chief Marketing Officer",
-  },
-];
+import { teams } from "@/config";
 
 const TeamSection = () => {
   return (
@@ -74,20 +56,31 @@ const TeamSection = () => {
         </div>
         <div className="w-full bg-[var(--divider)] h-[1px]"></div>
         <div className="grid grid-cols-4 gap-2 items-center py-16 max-md:hidden max-md:px-5">
-          {teamMembers.map((member, index) => (
+          {teams.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}
         </div>
         {/* For mobile screens, render Swiper; for larger screens, render grid */}
-        <div className="hidden max-md:block py-5 px-10">
+        <div className="hidden max-md:block py-5 px-5">
+          <style jsx global>{`
+            .team-swiper .swiper-button-next,
+            .team-swiper .swiper-button-prev {
+              color: var(--primary) !important;
+            }
+
+            .team-swiper .swiper-pagination-bullet-active {
+              background: var(--primary) !important;
+            }
+          `}</style>
           <Swiper
+            modules={[Navigation, Pagination]}
             spaceBetween={10}
             slidesPerView={1}
             pagination={{ clickable: true }}
             navigation
             className="team-swiper"
           >
-            {teamMembers.map((member, index) => (
+            {teams.map((member, index) => (
               <SwiperSlide key={index}>
                 <TeamMember {...member} />
               </SwiperSlide>
