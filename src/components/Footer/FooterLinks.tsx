@@ -21,7 +21,7 @@ const footerSections = [
   {
     title: "RESOURCES",
     links: [
-      { name: "articles", link: "" },
+      { name: "Articles", link: "" },
       { name: "Whitepaper", link: "" },
       { name: "Brandkit", link: "" },
     ],

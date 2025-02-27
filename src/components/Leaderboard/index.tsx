@@ -6,7 +6,16 @@ const Leaderboard = () => {
     <div>
       <div className="leaderboard-bg max-w-[1600px] w-full m-auto max-md:max-w-full py-16">
         <div>
-          <div className="mb-20 px-12 leaderboard-bg-1">
+          <div className="mb-20 px-12 leaderboard-bg-1 max-md:px-5">
+            <div className="hidden max-md:block mb-5">
+              <Image
+                src="/images/leaderboard1.png"
+                alt=""
+                width={400}
+                height={400}
+                className="max-w-[100%] w-full"
+              />
+            </div>
             <div className="max-w-[450px] w-full">
               <h2 className="text-4xl font-black leading-10 text-white mb-12 max-md:max-w-full max-md:text-3xl">
                 RUN THE <span className="gradient-text">LEADERBOARDS</span>
@@ -29,7 +38,16 @@ const Leaderboard = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-end px-12 leaderboard-bg-2">
+          <div className="flex justify-end max-md:flex-col max-md:gap-5 px-12 leaderboard-bg-2 max-md:px-5">
+            <div className="hidden max-md:block">
+              <Image
+                src="/images/leaderboard2.png"
+                alt=""
+                width={400}
+                height={400}
+                className="max-w-[100%] w-full"
+              />
+            </div>
             <div className="max-w-[500px] w-full">
               <h2 className="text-4xl font-black leading-10 text-white mb-12 max-md:max-w-full max-md:text-3xl">
                 <span className="gradient-text">TEAM UP</span> AND HACK BOSS’S STAKING POOLS
