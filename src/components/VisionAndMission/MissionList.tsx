@@ -26,7 +26,7 @@ export const MissionList: React.FC = () => {
       <h3 className="self-start text-3xl font-bold tracking-[3px]">OUR</h3>
       <h2 className="self-start text-6xl font-black gradient-text tracking-[3px] mb-4">VISION</h2>
       <p>
-        pKoi is on a mission to revolutionize the online gambling industry by returning power to the
+        Koi is on a mission to revolutionize the online gambling industry by returning power to the
         players. Unlike traditional casinos that have normalized hoarding profits, Koi is a
         community-owned platform where the most dedicated participants share in the project&#39;s
         success. Through blockchain empowered transparency and decentralized profit-sharing, Koi is
