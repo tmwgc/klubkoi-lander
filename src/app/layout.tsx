@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: title,
     description: description,
-    images: ["/thumbnail.png"],
+    images: ["https://klubkoi.com/thumbnail.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/thumbnail.png"],
+    images: ["https://klubkoi.com/thumbnail.png"],
   },
 };
 
